@@ -17,11 +17,12 @@ The opportunity is to build a study operating system that reduces chaos, preserv
 
 ## What This Repo Is For
 
-This repo should make it easy to do four things well:
+This repo should make it easy to do five things well:
 1. capture ideas quickly without losing them,
 2. incubate one idea deeply in a dedicated workspace,
 3. enforce a very high quality bar before promotion,
-4. hand only mature ideas to Claude Code for implementation.
+4. preserve architectural decisions and rejected paths,
+5. hand only mature ideas to Claude Code for implementation.
 
 ## Core Working Model
 
@@ -49,14 +50,20 @@ IsIdeas/
     IDEA_EVALUATION_RUBRIC.md
   workflows/
     IDEA_LIFECYCLE.md
+    SESSION_OPERATING_PROTOCOL.md
+    PROMOTION_CHECKLISTS.md
     CLAUDE_HANDOFF_STANDARD.md
   templates/
     QUICK_CAPTURE_TEMPLATE.md
+    IDEA_DOSSIER_TEMPLATE.md
     IDEA_SPEC_TEMPLATE.md
+    IDEA_WORKSPACE_README_TEMPLATE.md
     SESSION_NOTE_TEMPLATE.md
+    RESEARCH_NOTE_TEMPLATE.md
   catalog/
     IDEA_REGISTRY.md
     OPEN_QUESTIONS.md
+    PARKED_AND_REJECTED.md
   ideas/
     README.md
     <idea-slug>/
@@ -64,24 +71,28 @@ IsIdeas/
       DOSSIER.md
       SPEC.md              # only when promoted
       RESEARCH.md          # optional when needed
+      SESSIONS/            # optional, when discussion history matters
   shared/
     GLOSSARY.md
     SHARED_PRIMITIVES.md
+    KR_BOUNDARY.md
+  decisions/
+    README.md
+    ADR-001-WORKSHOP-FIRST.md
+    ADR-002-IDEA-WORKSPACE-PER-IDEA.md
   roadmaps/
     THREE_YEAR_ROADMAP.md
 ```
 
 ## How We Will Use It
 
-In this chat, the focus is repository architecture.
-In later chats, the focus will be one idea at a time.
-
 Recommended operating rhythm:
 1. capture or identify one promising idea,
 2. give it a dedicated chat,
-3. deepen it into the idea workspace,
+3. deepen it into the dossier,
 4. pressure-test it hard,
-5. only then decide whether it deserves spec work.
+5. record decisions and open questions,
+6. only then decide whether it deserves spec work.
 
 ## Non-Negotiables
 
@@ -91,7 +102,8 @@ Recommended operating rhythm:
 - explicit uncertainty when needed,
 - traceability where claims matter,
 - clear stage separation,
-- clear reason for every promoted idea.
+- clear reason for every promotion,
+- preserved record of important decisions.
 
 ## Current Starting Point
 

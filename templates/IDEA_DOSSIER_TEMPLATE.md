@@ -32,9 +32,6 @@ How could this mislead, overreach, distract, or create false confidence?
 ## Relationship To `kr`
 How does this depend on, extend, or stay distinct from `kr`?
 
-## Competing / Alternative Approaches
-What other ways might the same bottleneck be attacked?
-
 ## Current Open Questions
 What still needs deep thinking or research?
 

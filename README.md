@@ -1,0 +1,3 @@
+# IsIdeas
+
+Bootstrapping repository.

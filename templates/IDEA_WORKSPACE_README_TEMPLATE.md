@@ -1,15 +1,19 @@
 # Idea Workspace README Template
 
+## Idea ID
+
+## Idea Name
+
 ## Current Stage
+
+## Current Priority Band
+- P1
+- P2
+- P3
 
 ## Why This Idea Exists
 
 ## Current Status
-
-## Current Priority
-- high
-- medium
-- low
 
 ## Main Risk Right Now
 

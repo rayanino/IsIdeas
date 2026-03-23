@@ -5,6 +5,9 @@ This file names the current primary deep-focus target.
 ## Current Primary Focus
 Curriculum Architect
 
+## Current Priority Band
+P1
+
 ## Why
 It attacks one of the highest-leverage bottlenecks: sequencing, prerequisites, and study order.
 

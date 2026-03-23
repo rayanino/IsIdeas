@@ -17,12 +17,13 @@ The opportunity is to build a study operating system that reduces chaos, preserv
 
 ## What This Repo Is For
 
-This repo should make it easy to do five things well:
+This repo should make it easy to do six things well:
 1. capture ideas quickly without losing them,
 2. incubate one idea deeply in a dedicated workspace,
 3. enforce a very high quality bar before promotion,
 4. preserve architectural decisions and rejected paths,
-5. hand only mature ideas to Claude Code for implementation.
+5. control focus so attention does not fragment,
+6. hand only mature ideas to Claude Code for implementation.
 
 ## Core Working Model
 
@@ -47,11 +48,16 @@ IsIdeas/
   principles/
     STUDY_OS_PRINCIPLES.md
     QUALITY_BAR.md
+    ANTI_CHAOS_RULES.md
     IDEA_EVALUATION_RUBRIC.md
   workflows/
     IDEA_LIFECYCLE.md
+    IDEA_STAGE_SEMANTICS.md
     SESSION_OPERATING_PROTOCOL.md
+    CHAT_SCOPING_RULES.md
+    FOCUS_DISCIPLINE.md
     PROMOTION_CHECKLISTS.md
+    NAMING_AND_NUMBERING_CONVENTIONS.md
     CLAUDE_HANDOFF_STANDARD.md
   templates/
     QUICK_CAPTURE_TEMPLATE.md
@@ -60,7 +66,10 @@ IsIdeas/
     IDEA_WORKSPACE_README_TEMPLATE.md
     SESSION_NOTE_TEMPLATE.md
     RESEARCH_NOTE_TEMPLATE.md
+  capture/
+    README.md
   catalog/
+    ACTIVE_FOCUS.md
     IDEA_REGISTRY.md
     OPEN_QUESTIONS.md
     PARKED_AND_REJECTED.md
@@ -79,7 +88,7 @@ IsIdeas/
   decisions/
     README.md
     ADR-001-WORKSHOP-FIRST.md
-    ADR-002-IDEA-WORKSPACE-PER-IDEA.md
+    ADR-002-ONE-WORKSPACE-PER-IDEA.md
   roadmaps/
     THREE_YEAR_ROADMAP.md
 ```
@@ -88,8 +97,8 @@ IsIdeas/
 
 Recommended operating rhythm:
 1. capture or identify one promising idea,
-2. give it a dedicated chat,
-3. deepen it into the dossier,
+2. decide whether it stays a spark or deserves incubation,
+3. deepen one serious target at a time into the dossier,
 4. pressure-test it hard,
 5. record decisions and open questions,
 6. only then decide whether it deserves spec work.
@@ -103,7 +112,8 @@ Recommended operating rhythm:
 - traceability where claims matter,
 - clear stage separation,
 - clear reason for every promotion,
-- preserved record of important decisions.
+- preserved record of important decisions,
+- active attention kept narrow enough for depth.
 
 ## Current Starting Point
 

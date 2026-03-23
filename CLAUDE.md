@@ -1,108 +1,109 @@
 # CLAUDE.md
 
-This repository contains **implementation-grade idea specifications** for a long-horizon Islamic-study software environment.
+This repository is a **high-rigor idea workshop** for a long-horizon Islamic-study software environment.
 
-The job here is not to brainstorm casually.
-The job is to produce ideas that are strategically valuable, rigorously scoped, and clear enough for Claude Code to implement without guessing at fundamentals.
+The job here is not to collect impressive-sounding ideas.
+The job is to protect quality, deepen promising concepts, and produce handoff-grade specifications only when deserved.
 
 ## Core Rule
 
-Do not treat this repository as a notebook of interesting thoughts.
-Treat it as a **specification system**.
+Treat every new idea as unproven.
+It must earn its way from capture → incubation → dossier → specification → handoff.
 
-Every substantial addition should either:
-- improve the methodology of the repository, or
-- add/refine a software idea specification.
+## Your Role In This Repo
 
-## Repository Priorities
-
-Optimize for:
-- strategic leverage,
+When working here, prioritize:
+- leverage,
 - correctness,
-- clarity,
+- implementation clarity,
 - explicit tradeoffs,
-- implementation readiness,
-- cross-app coherence.
+- cross-app coherence,
+- and intellectual honesty about uncertainty.
 
 Do not optimize for:
+- raw idea count,
 - novelty for its own sake,
 - inflated scope,
-- aesthetic fluff,
-- vague product language,
-- pseudo-scholarly claims,
-- features without a real bottleneck behind them.
+- pseudo-scholarly confidence,
+- or polished language hiding fuzzy thinking.
 
-## How To Work On Ideas
+## Default Move
 
-For every idea, think through the full chain:
+When in doubt:
+1. improve structure,
+2. improve the dossier of an existing strong idea,
+3. clarify shared primitives,
+4. or reject / park a weak idea.
+
+Do not jump to implementation briefs too early.
+
+## Working Discipline
+
+For every substantial idea, force answers to the following:
 1. What exact study bottleneck does this attack?
-2. Why is software the right tool here?
-3. Why is this specifically useful in Islamic study, rather than generic studying?
-4. What are the core entities and data contracts?
-5. What must be source-backed versus inferred?
+2. Why is software actually the right tool?
+3. Why is this specifically valuable in Islamic study?
+4. What are the core entities and system boundaries?
+5. What must be source-backed vs computed?
 6. Where are the correctness risks?
 7. What must remain under human control?
-8. What is the MVP boundary?
-9. How would we know whether it worked?
-10. How does it compound with the rest of the portfolio?
+8. What must the MVP prove?
+9. How could this mislead the user?
+10. How does it compound with the rest of the stack?
 
-## Required Standard For Specs
+## Promotion Standard
 
-A spec is not complete unless it includes:
-- thesis,
-- user problem,
-- strategic value,
-- workflow,
-- inputs,
-- outputs,
-- data model,
-- system behavior,
-- constraints,
-- failure modes,
-- evaluation criteria,
-- MVP and later phases,
-- implementation brief.
+An idea should not become `SPEC.md` material until:
+- the problem is precise,
+- the leverage is real,
+- the data model is intelligible,
+- the failure modes are understood,
+- and the path to implementation is clear.
 
-## Islamic-Study Specific Discipline
+An idea should not be handed to Claude Code until:
+- the spec is complete,
+- the scope boundary is crisp,
+- correctness constraints are explicit,
+- and the build goal is testable.
 
-Be careful not to smuggle in assumptions that belong to scholars, teachers, or mature students.
+## Portfolio Coherence Rule
+
+Prefer systems that share primitives and reinforce one another.
+Avoid isolated mini-products unless there is a compelling reason.
+
+Important shared primitives likely include:
+- science IDs
+- topic IDs
+- source IDs
+- excerpt IDs
+- scholar IDs
+- claim IDs
+- review events
+- memorization objects
+- uncertainty markers
+- human-review states
+
+## Islamic-Study Safety Discipline
 
 The software may:
 - structure,
 - retrieve,
 - compare,
+- sequence,
 - schedule,
-- trace,
 - flag,
-- organize,
-- assist review.
+- trace,
+- and support disciplined study.
 
 The software may not responsibly:
-- invent scholarly judgments,
-- hide uncertainty,
+- fabricate scholarly judgments,
+- erase uncertainty,
 - flatten meaningful disagreement,
-- present inferred claims as established knowledge,
-- bypass human review where scholarly risk is meaningful.
+- present inference as established knowledge,
+- or bypass human review where scholarly risk is meaningful.
 
 ## Writing Standard
 
-Write like a senior systems designer preparing work for implementation.
-Prefer sharp definitions over expansive prose.
-Every major claim should cash out into architecture, workflow, or scope.
-
-## Portfolio Coherence Rule
-
-Do not create isolated apps unless there is a strong reason.
-Prefer systems that share primitives with the rest of the portfolio, such as:
-- source IDs
-- topic IDs
-- excerpt IDs
-- scholar IDs
-- claim IDs
-- memorization objects
-- review events
-- uncertainty markers
-
-## Default Move
-
-When in doubt, improve the specification quality of an existing high-value idea instead of adding a new lower-quality one.
+Write like a senior systems architect preparing material that will later be implemented.
+Prefer exactness over flourish.
+Prefer explicit boundaries over inspiring vagueness.

@@ -1,25 +1,25 @@
-# 002 — Memorization OS
+# 002 — Fixed-Text Preservation System
 
 ## Idea ID
 002
 
 ## Idea Name
-Memorization OS
+Fixed-Text Preservation System
 
 ## Current Stage
 Incubating
 
 ## Current Priority Band
-P2
+P1
 
 ## Why This Idea Exists
-To support one of the few areas software cannot replace but can strongly reinforce: disciplined memorization and long-term retention.
+To help preserve already-memorized exact text over time, starting with the Qur'an, without collapsing into generic memorization management or initial acquisition coaching.
 
 ## Current Status
-This idea is strong enough for sustained dossier work, but it still needs tighter thinking around segmentation, review logic, and what useful analytics really look like.
+This idea now holds formal P1 attention under the narrowed fixed-text preservation thesis, with Qur'an-first as the first serious proving ground.
 
 ## Main Risk Right Now
-Fake precision: the system could present noisy retention estimates as if they were reliable measures of actual memorization strength.
+Boundary drift and fake precision.
 
 ## Next Move
-Deepen the dossier until the memorization unit, review strategy, and honesty constraints around retention estimation are much sharper.
+Deepen dossier around preservation logic and boundaries.

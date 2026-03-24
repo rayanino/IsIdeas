@@ -3,13 +3,13 @@
 This file names the current primary deep-focus target.
 
 ## Current Primary Focus
-Curriculum Architect
+Fixed-Text Preservation System
 
 ## Current Priority Band
 P1
 
 ## Why
-It attacks one of the highest-leverage bottlenecks: sequencing, prerequisites, and study order.
+It attacks a high-leverage bottleneck: exact-text preservation and long-term retention.
 
 ## Current Stage
 Incubating

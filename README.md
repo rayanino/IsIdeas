@@ -95,6 +95,14 @@ IsIdeas/
     TASK_QUEUE.md
     PR_REVIEW_CHECKLIST.md
     IMMEDIATE_NEXT_ACTIONS.md
+  control_tower/
+    README.md
+    CHARTER.md
+    EMPLOYEE_PROTOCOLS.md
+    OPERATING_LOOP.md
+    START_HERE.md
+    BOOTSTRAP_PROMPT.md
+    SESSION_CHECKLIST.md
   ideas/
     README.md
     <idea-slug>/

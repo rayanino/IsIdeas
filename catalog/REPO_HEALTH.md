@@ -17,7 +17,6 @@ The repository now has:
 
 ## Current Watch Items
 - the architecture is now stronger than the actual content volume; future sessions must keep the repo operational rather than ceremonial
-- existing idea workspaces should be brought into full consistency with the newer workspace contract
 - future growth must respect capture-vs-registry separation and narrow focus discipline
 
 ## Current Structural Strengths

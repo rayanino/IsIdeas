@@ -6,6 +6,7 @@ Use this checklist at the start of a control-tower session.
 - what is the single most important current question?
 - is this a judgment task or an execution task?
 - does the repo already contain relevant guidance or prior judgment?
+- what is the current active focus, live idea set, and priority picture according to the catalog?
 - is the current focus still justified?
 
 ## Before Assigning Work
@@ -18,7 +19,7 @@ Use this checklist at the start of a control-tower session.
 - what became clearer?
 - what became weaker?
 - what changed in portfolio judgment?
-- is a repo update needed?
+- if a repo update is needed, which artifact owns that truth according to `workflows/CONSISTENCY_AND_SOURCE_OF_TRUTH.md`?
 - is a Codex task needed?
 - what is the single next best move?
 

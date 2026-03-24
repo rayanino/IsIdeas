@@ -57,9 +57,9 @@ Examples:
 
 ## ADR Naming
 
-Architecture decision records should follow names like:
-- `ADR-001-workshop-first.md`
-- `ADR-002-one-workspace-per-idea.md`
+Architecture decision records should follow the repo's durable uppercase filename style:
+- `ADR-001-WORKSHOP-FIRST.md`
+- `ADR-002-ONE-WORKSPACE-PER-IDEA.md`
 
 The number is chronological and never reused.
 

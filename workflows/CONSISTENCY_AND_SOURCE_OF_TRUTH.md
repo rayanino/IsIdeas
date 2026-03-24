@@ -59,6 +59,16 @@ This is the authoritative grouping of live ideas into P1, P2, and P3 bands.
 ### 6. `catalog/PARKED_AND_REJECTED.md`
 This is the authoritative preserved record of non-active ideas that were intentionally parked or rejected.
 
+### 7. `catalog/OPEN_QUESTIONS.md`
+This is the authoritative list of repository-level open questions that affect multiple ideas or the workshop itself.
+
+Idea-local open questions should stay in the relevant dossier unless they clearly affect cross-portfolio judgment.
+
+### 8. `catalog/REPO_HEALTH.md`
+This is the authoritative concise summary of current workshop health, watch items, and the next structural concern to monitor.
+
+It is a summary artifact, not a substitute for the audits, decisions, or consistency work that justify its current judgment.
+
 ## Update Order
 
 When a serious judgment changes, the safest update order is usually:
@@ -66,7 +76,7 @@ When a serious judgment changes, the safest update order is usually:
 2. update the registry,
 3. update the idea workspace README,
 4. update active-focus and priority-board artifacts if affected,
-5. update parked/rejected records if the idea leaves live circulation.
+5. update open-questions, parked/rejected, and repo-health artifacts if affected.
 
 ## Live vs Non-Live Ideas
 

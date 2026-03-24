@@ -53,7 +53,7 @@ Students can spend serious effort acquiring exact text and then lose it graduall
 - what evidence from a Qur'an-first MVP would justify later expansion without widening the idea prematurely?
 
 ## Current Judgment
-This narrower thesis is materially stronger than the old broad framing because it is about exact-text preservation rather than generic memorization management. The workspace slug and catalog files still carry the legacy label for scope reasons, but this dossier should use the narrowed thesis. It remains a dossier-stage idea, not a broader portfolio decision.
+This narrower thesis is materially stronger than the old broad framing because it is about exact-text preservation rather than generic memorization management. The workspace slug and catalog files still carry the legacy label for scope reasons, but this dossier should use the narrowed thesis. It remains an incubating idea, not a broader portfolio decision.
 
 ## Next Move
 Hold the boundary and keep sharpening the idea on this narrower ground: Qur'an-first, already-memorized exact passages, full-passage review, first-break diagnosis, and honest recovery states without speculative analytics.

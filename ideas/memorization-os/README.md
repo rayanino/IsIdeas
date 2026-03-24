@@ -1,10 +1,10 @@
-# 002 — Memorization OS
+# 002 — Fixed-Text Preservation System
 
 ## Idea ID
 002
 
 ## Idea Name
-Memorization OS
+Fixed-Text Preservation System
 
 ## Current Stage
 Incubating
@@ -13,13 +13,13 @@ Incubating
 P2
 
 ## Why This Idea Exists
-To support one of the few areas software cannot replace but can strongly reinforce: disciplined memorization and long-term retention.
+To help preserve already-memorized exact text over time, starting with the Qur'an, without collapsing into generic memorization management or initial acquisition coaching.
 
 ## Current Status
-This idea is strong enough for sustained dossier work, but it still needs tighter thinking around segmentation, review logic, and what useful analytics really look like.
+This workspace is now being hardened around a narrower thesis: a Qur'an-first preservation MVP for already-memorized exact text. The directory slug and catalog files still use the legacy "Memorization OS" label for task-scope reasons; that drift is intentional and out of scope here.
 
 ## Main Risk Right Now
-Fake precision: the system could present noisy retention estimates as if they were reliable measures of actual memorization strength.
+Boundary drift and fake precision: the idea could expand back into generic memorization-product logic, or blur exact-text preservation with claim/position retention while presenting noisy signals as if they were reliable.
 
 ## Next Move
-Deepen the dossier until the memorization unit, review strategy, and honesty constraints around retention estimation are much sharper.
+Keep tightening the dossier around passage-based preservation, first-break recording, state logic, and strict scope boundaries for a Qur'an-first MVP.

@@ -10,7 +10,7 @@ Curriculum Architect
 Incubating
 
 ## Current Priority Band
-P1
+P2
 
 ## Why This Idea Exists
 To attack one of the biggest study bottlenecks: bad sequencing, weak prerequisites, and chaotic progression through a science.

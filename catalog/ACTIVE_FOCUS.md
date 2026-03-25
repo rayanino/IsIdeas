@@ -9,7 +9,7 @@ Fixed-Text Preservation System
 P1
 
 ## Why
-It attacks a high-leverage bottleneck: exact-text preservation and long-term retention.
+It attacks a high-leverage bottleneck: exact-text preservation and long-term retention, with Qur'an-first as the first serious proving ground.
 
 ## Current Stage
 Incubating

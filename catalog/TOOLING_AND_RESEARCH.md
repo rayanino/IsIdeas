@@ -4,24 +4,19 @@
 
 | ID | Tool | Category | Status | Note |
 |---|---|---|---|---|
-| T-001 | WSL2 runtime clone | execution host | adopted | Preferred unattended host so long runs stay isolated from the interactive Windows checkout. |
-| T-002 | Codex CLI | primary agent runtime | adopted | Primary writing and integration lane for the control tower and future handoff packets. |
-| T-003 | Claude Code | secondary agent runtime | evaluating | Useful as an independent verification or exploration lane when cross-provider disagreement matters. |
-| T-004 | Gemini CLI | secondary agent runtime | evaluating | Useful as a local multi-provider research or verification lane without requiring a separate API key. |
-| T-005 | Paperclip | agent control plane reference | watching | Reference for multi-agent orchestration and UI, but not yet trusted as the canonical core. |
-| T-006 | pg-boss | durable queue | superseded | Was a candidate durable queue for the runtime; runtime has been extracted per ADR-011. |
+| T-001 | Codex CLI | primary factory authoring lane | adopted | Primary writing and integration lane for factory docs, dossier work, and handoff packets. |
+| T-002 | Claude Code | external execution lane | adopted | Use when a handoff packet is mature enough for implementation work in a separate repo. |
+| T-003 | Gemini CLI | secondary research and verification lane | evaluating | Useful as a cross-provider research or verification lane when disagreement matters. |
 
 ## Research Artifacts
 
 | ID | Artifact | Status | Focus | Note |
 |---|---|---|---|---|
-| R-001 | Autonomous system architecture survey | active | Control plane options, WSL runtime, durable queues, and local-first orchestration. | Paperclip, OpenAI Agents SDK, and Temporal have already been sampled. |
-| R-002 | Foundations-first bottleneck map | active | Qur'an, Arabic, memorization, question capture, and private study continuity. | This remains a working analytical map and still needs explicit source-backed grounding. |
+| R-001 | Foundations-first bottleneck map | active | Qur'an, Arabic, memorization, question capture, and private study continuity. | This remains a working analytical map and still needs explicit source-backed grounding. |
+| R-002 | I-002 modelability determination session | active | Whether Curriculum Architect can stay honest as a container for published curriculum structures. | See `research/I-002-MODELABILITY-SESSION-2026-03-31.md`. |
+| R-003 | Extracted control-tower architecture review | archived | Historical record of why the dashboard and runtime surfaces were removed from IsIdeas. | Preserved in ADR-011 and the adversarial review; not an active factory research lane. |
 
-## Evidence Links
+## Note
 
-| ID | Title | Source | Note |
-|---|---|---|---|
-| ev-001 | Paperclip architecture | official docs | Useful as a multi-agent control plane reference. |
-| ev-002 | OpenAI Agents SDK | official docs | Use for structured handoffs, tools, and agent orchestration. |
-| ev-003 | Temporal docs | official docs | Durable execution reference considered and deferred for stack simplicity. |
+Runtime, control-plane, and durable-execution tooling are preserved only as historical extraction context.
+They are not active factory directions inside `IsIdeas`.

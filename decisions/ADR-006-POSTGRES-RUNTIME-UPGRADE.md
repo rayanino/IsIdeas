@@ -3,6 +3,9 @@
 ## Status
 Superseded — applies to the extracted control tower per ADR-011
 
+This ADR is preserved as historical context only.
+It does not govern current `IsIdeas` behavior.
+
 ## Decision
 Add a local Postgres-backed runtime mode, but require the storage transition to be recorded explicitly in integrity and decision history.
 

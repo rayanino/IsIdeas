@@ -1,11 +1,11 @@
 # Active Focus
 
 ## Current Operating Focus
-Next frontier selection after handoff queue promotion
+I-002 Curriculum Architect re-entry path groundwork
 
 ## Why
-`Fixed-Text Preservation System` is now handoff-ready and has left active factory depth.
-The factory should not keep working on implementation-adjacent detail after handoff.
+ADR-012 established that I-002 is structurally sound enough to stay alive, but not yet strong enough for frontier re-entry.
+The single best next move is to source one specific published curriculum sequence and begin the authority-boundary data model design.
 
 ## Deep Attention
 - none currently
@@ -19,3 +19,4 @@ The factory should not keep working on implementation-adjacent detail after hand
 ## Rule
 Handoff-ready ideas leave active deep attention and enter the handoff queue.
 The next deep-focus idea must be chosen deliberately, not by inertia.
+Until I-002 completes its re-entry path, this repo should deepen that groundwork rather than pretending the frontier is already chosen.

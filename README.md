@@ -66,6 +66,7 @@ IsIdeas/
   ideas/                  # idea workspaces (dossiers, specs, research)
   handoff/                # builder-facing handoff packets
   codex/                  # operator-facing usage guidance
+  audits/                 # session-level findings and synthesis inputs
   research/               # promoted source-backed surveys
   capture/                # raw idea intake
   submissions/            # submission tracking

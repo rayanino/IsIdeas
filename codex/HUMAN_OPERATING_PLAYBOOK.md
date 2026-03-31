@@ -1,6 +1,6 @@
 # Owner Playbook
 
-Use the repo like an owner of a control tower, not like a manual project manager.
+Use the repo like an owner of a factory, not like a manual project manager.
 
 ## Best Use Of Your Time
 
@@ -12,7 +12,7 @@ Use the repo like an owner of a control tower, not like a manual project manager
 ## Poor Use Of Your Time
 
 - micromanaging technical structure
-- trying to out-architect the control plane manually
+- trying to out-design the factory workflow manually
 
 ## Practical Rule
 

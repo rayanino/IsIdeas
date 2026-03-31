@@ -8,6 +8,7 @@ All canonical truth in this repo lives in version-controlled markdown:
 - `CLAUDE.md`
 - `control_tower/`
 - `catalog/`
+- `audits/` (evidence and findings archive; not canonical by itself)
 - `shared/`
 - `decisions/`
 - `ideas/`
@@ -21,6 +22,8 @@ If a governed claim changes:
 - the relevant repo-tracked file must change,
 - the change must be traceable,
 - and older conflicting docs must be updated or explicitly deprecated.
+
+Audit files may justify changes, but they do not replace the governed file that owns the truth.
 
 ## Forbidden Shortcut
 

@@ -1,7 +1,7 @@
 # Curriculum Architect — Dossier
 
 ## Working Thesis
-Build a system that helps a student move through an Islamic science in the right order, with explicit prerequisite awareness and stage discipline.
+Build a system that helps a student move through an Islamic science with explicit sequence attribution, prerequisite awareness, and stage discipline.
 
 ## Why This Might Matter
 A huge amount of wasted study effort comes from bad sequencing rather than lack of effort.
@@ -38,9 +38,9 @@ A bounded session tested two questions: (1) can software hold contradictory prer
 
 **Key finding:** The system must be a container for structures that traditions already publish, not a source of its own prerequisite structures. This reframes the idea from "a system that models prerequisites" (authority claim) to "a system that presents what traditions already model" (honest container).
 
-**Authority boundary:** Architecturally sound. Source-attributed edges, no default path, teacher override, visible disagreement. Each prerequisite relationship carries a named source. The system never recommends.
+**Authority boundary:** Architecturally sound. Source-attributed edges, no default path, teacher-guided path support, visible disagreement. Each prerequisite relationship carries a named source. The system never recommends.
 
-**Published structures exist:** Dars-e-Nizami provides text-level sequencing. Al-Azhar provides science-level sequencing. Multiple online platforms treat prerequisites as explicit and modelable. Classical texts (Ta'lim al-Muta'allim, Muqaddima) validate the concept.
+**Published structures exist:** Dars-e-Nizami provides text-level sequencing. Al-Azhar provides science-level sequencing. Multiple online platforms treat prerequisites as explicit and modelable. Classical texts (Ta'lim al-Muta'allim, Muqaddima) show that attention to sequencing has historical precedent.
 
 **Evidence qualification:** Survey is based on general knowledge, not verified primary sources. Next step requires actual sourcing.
 
@@ -58,7 +58,7 @@ It now has one institution-bound sequence with:
 - explicit 8-year stage order
 - named subject rows with assigned texts
 - published alternatives inside some rows
-- at least one apparently surprising internal ordering that must be preserved literally rather than normalized
+- at least one non-monotonic internal ordering that must be preserved literally rather than normalized
 
 The source should be treated as:
 - one concrete sequence the system can ingest honestly
@@ -73,9 +73,9 @@ The sourced Jamia Binoria sequence sharpens the authority boundary into concrete
 - `curriculum_stage` must preserve literal labels (`Aamma`, `Khassa`, `Aalia`, `Aalamia`) alongside ordinal order
 - `stage_unit` must allow multiple texts under one published subject row
 - `text_assignment` must allow explicit alternatives and selections from within a single source
-- source-attributed sequence edges must be stored as published, even when the source contains surprising internal order
+- source-attributed sequence edges must be stored as published, even when the source contains non-monotonic internal order
 - teacher guidance must sit in a parallel overlay, not by mutating the published source
-- co-curricular and optional lanes must be distinguishable from the core sequence
+- editorial display groupings must be distinguishable from the source's main published sequence without being presented as scholarly categories
 
 ## Authority-Boundary Data Model (2026-03-31)
 
@@ -87,7 +87,7 @@ It is intentionally source-first rather than ontology-first.
 - it does not claim a universal prerequisite graph for Islamic study
 - it does not claim that Jamia Binoria's sequence is the correct Dars-e-Nizami order
 - it does not create a default path across traditions or even across variants of one tradition
-- it does not normalize surprising published order into cleaner internal logic
+- it does not normalize non-monotonic published order into cleaner internal logic
 - it does not replace teacher guidance; teacher guidance remains a higher local authority for the student's path
 
 ### Core Entities
@@ -103,7 +103,9 @@ The named published source being represented.
 - `accessed_on`: date the factory accessed the source
 - `tradition_label` optional: broad tradition family if the source self-identifies or the repo uses a careful descriptive label
 - `scope_note`: what this source does and does not represent
-- `representativeness_status`: `unvalidated`, `validated`, or `disputed`
+- `source_review_status`: `unreviewed`, `reviewed_with_scope_limits`, or `disputed`
+- `reviewed_by` optional: who supplied the review judgment
+- `review_scope_note` optional: what exactly was reviewed and what was not
 
 #### `CurriculumStage`
 
@@ -127,13 +129,13 @@ One published subject row inside one stage.
 - `unit_id`: stable local identifier
 - `stage_id`: owning stage
 - `subject_label`: published or minimally normalized subject label
-- `lane_tag`: `core`, `co_curricular`, or `optional`
+- `editorial_group`: `sequence_listing`, `supplementary_listing`, or `elective_listing`
 - `display_order`: row order inside the stage
 - `unit_note` optional: comments about grouped texts, mixed subjects, or extraction ambiguity
 
 Constraint:
 - each published row remains a distinct unit even if two rows look conceptually similar
-- `lane_tag` separates core sequence from attached institutional extras
+- `editorial_group` is a factory display aid unless the source itself supplies an explicit category
 
 #### `TextAssignment`
 
@@ -164,31 +166,31 @@ An ordered relation preserved from the source or introduced by teacher guidance.
 - `to_unit_id` optional
 - `to_text_assignment_id` optional
 - `edge_basis`: `published_sequence` or `teacher_specified`
-- `edge_note` optional: why the edge exists or why it looks surprising
+- `edge_note` optional: why the edge exists or why it deserves a source note
 
 Constraint:
 - published edges may only describe order that the source itself makes visible
 - edges are source-attributed and never treated as universal truths
-- surprising order is stored as published, not auto-corrected
+- non-monotonic order is stored as published, not auto-corrected
 
-#### `CurriculumObservation`
+#### `CurriculumNote`
 
-A note that preserves ambiguity, anomaly, or extraction caution.
+A note that preserves source fidelity, ambiguity, or extraction caution without implying that the factory detected a source error.
 
-- `observation_id`: stable local identifier
+- `note_id`: stable local identifier
 - `source_id`: owning source
 - `stage_id` optional
 - `unit_id` optional
 - `text_assignment_id` optional
-- `observation_type`: `anomaly`, `ambiguity`, or `translation_note`
+- `note_type`: `source_note`, `ambiguity`, `translation_note`, or `extraction_note`
 - `description`: human-readable explanation of what must not be silently flattened
 
 Constraint:
-- observations explain oddities without changing the source record itself
+- notes explain what the source says or what the extraction could not safely infer, without changing the source record itself
 
-#### `TeacherSpecifiedPath`
+#### `TeacherGuidedPath`
 
-A local overlay representing teacher guidance for one student's path.
+A local path representing teacher guidance for one student's context.
 
 - `teacher_path_id`: stable local identifier
 - `teacher_attribution`: named teacher or careful attribution label
@@ -196,12 +198,13 @@ A local overlay representing teacher guidance for one student's path.
 - `affected_stage_id` optional
 - `affected_unit_id` optional
 - `affected_text_assignment_id` optional
-- `override_description`: what the teacher changed or emphasized
-- `override_scope`: `add`, `remove`, `resequence`, or `emphasize`
+- `guidance_note`: what the teacher specified or emphasized
+- `guidance_type`: `add`, `omit`, `resequence`, or `emphasize`
 
 Constraint:
-- teacher guidance overlays the published source; it does not mutate or erase it
-- published data and teacher guidance must remain simultaneously visible when they differ
+- a teacher-guided path does not mutate or erase the published source
+- in the student's local context, the teacher-guided path may function as the primary path while the published source remains visible for comparison
+- source and teacher guidance must remain simultaneously visible when they differ
 
 ### Worked Mapping From The Jamia Binoria Source
 
@@ -209,19 +212,19 @@ Constraint:
 |---|---|---|
 | `Aamma Part 2` appears as the second year/stage | `CurriculumStage` with `literal_stage_label = Aamma Part 2` and `stage_ordinal = 2` | Literal label and sortable order are both preserved. |
 | A Year 3 fiqh row lists `Al-Ikhtiyar` or `Kanz al-Daqa'iq` | One `StageUnit` plus two `TextAssignment` records sharing one `choice_group_id` and `assignment_mode = alternative` | The source's internal alternative remains visible instead of being normalized away. |
-| `Al-Hidaya` part 4 appears in Year 6 while part 3 appears in Year 7 | Two `TextAssignment` records in separate stages, a `CurriculumEdge` that preserves Year 6 before Year 7 as `published_sequence`, plus one `CurriculumObservation` of type `anomaly` | The model stores the source literally and records the surprise without auto-correction. |
+| `Al-Hidaya` part 4 appears in Year 6 while part 3 appears in Year 7 | Two `TextAssignment` records in separate stages, a `CurriculumEdge` that preserves Year 6 before Year 7 as `published_sequence`, plus one `CurriculumNote` of type `source_note` explaining the non-monotonic part numbering | The model stores the source literally and records what the source says without auto-correction or fault-claiming language. |
 
 ### Minimum Rules That Make The Model Honest
 
-- every stage, unit, text assignment, and edge must remain attributable to a named source or named teacher overlay
+- every stage, unit, text assignment, and edge must remain attributable to a named source or named teacher-guided path
 - every source keeps its own ordering; no cross-source merge creates a hidden canonical path
-- a source may contain alternatives, optional lanes, and anomalies without losing fidelity
-- teacher guidance may contradict a published source, but the contradiction must remain visible rather than silently replacing the source
+- a source may contain alternatives, editorial display groupings, and source notes without losing fidelity
+- teacher guidance may differ from a published source, but that difference must remain visible rather than silently replacing either path
 
 ## Smallest Honest MVP Boundary (2026-03-31)
 
 The smallest honest MVP is not a recommendation engine.
-It is a source-attributed curriculum container with one teacher-overlay lane.
+It is a source-attributed curriculum container with one teacher-guided path.
 
 ### In Scope
 
@@ -229,9 +232,9 @@ It is a source-attributed curriculum container with one teacher-overlay lane.
 - stage-level and row-level browsing of that source
 - visible source attribution on every stage, unit, text assignment, and sequence edge
 - explicit display of alternatives inside one source
-- explicit distinction between `core`, `co_curricular`, and `optional` rows
-- preservation of anomalies and ambiguities through `CurriculumObservation`
-- one teacher-specified overlay path that can coexist with the published source without mutating it
+- explicit editorial distinction between sequence rows, supplementary rows, and elective rows, marked as a reading aid rather than a scholarly category unless the source itself says otherwise
+- preservation of source notes and ambiguities through `CurriculumNote`
+- one teacher-guided path that can coexist with the published source without mutating it
 
 ### Out Of Scope
 
@@ -249,8 +252,8 @@ The MVP helps a student or teacher answer:
 
 - what does this named published curriculum actually contain?
 - in what order does this institution publish it?
-- where does the source itself offer alternatives or optional lanes?
-- where has my teacher told me to diverge from the published sequence?
+- where does the source itself offer alternatives or non-primary rows?
+- how does my teacher-guided path differ from this published sequence?
 
 It does not help answer:
 
@@ -272,15 +275,23 @@ The validation packet now exists at `ideas/curriculum-architect/RESEARCH.md`.
 It is written for a generic scholar or curriculum expert and asks for structured judgment on four axes:
 
 1. Is the Jamia Binoria source representative enough to validate one real Dars-e-Nizami variant?
-2. Does the model preserve authority boundaries honestly, especially around source attribution and teacher override?
-3. Is literal preservation of anomalies the right behavior, or does the model still hide a false claim somewhere?
+2. Does the model preserve authority boundaries honestly, especially around source attribution and the teacher-guided path?
+3. Is literal source preservation with neutral source notes the right behavior, or does the model still hide a false claim somewhere?
 4. Is the MVP useful enough once recommendation behavior is removed?
 
-The next pass should obtain and preserve the first external validation response rather than expanding the model further on internal judgment alone.
+The first external response has now arrived at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_DEEP_RESEARCH_2026-03-31.md`.
+
+Its core signal is:
+- `overall_honest: no`
+- `second_source_required_before_further_work: no`
+- the main leak is semantic authority loaded into labels such as `validated`, `core`, `optional`, `anomaly`, and teacher-as-deviation phrasing
+
+The next pass should preserve that response, apply the smallest integrity revision needed to remove those labels, and only then request the next external review.
 
 ## Current Judgment
 Structurally sound, source-anchored, and now backed by an intelligible authority-boundary model plus a plausible MVP boundary.
-The idea is materially stronger than before, and the first validation packet now exists, but it should not be promoted yet because external scholarly or curriculum validation still decides whether this model is honest enough in practice.
+The idea is materially stronger than before, but the first external review found a real integrity problem in the repo's terminology and framing.
+That does not require a second source yet, but it does mean the current wording should be tightened before more external validation is treated as meaningful.
 
 ## Re-Entry Path (all four required before frontier promotion)
 1. Completed 2026-03-31: source at least one complete published curriculum sequence
@@ -289,4 +300,4 @@ The idea is materially stronger than before, and the first validation packet now
 4. Find a scholar or curriculum expert who can validate the sourced curriculum and the authority boundary mechanism
 
 ## Next Move
-Obtain and preserve the first scholar or curriculum-expert response to `ideas/curriculum-architect/RESEARCH.md`, without promoting the idea before that validation lands.
+Preserve the first external review, apply a narrow terminology and epistemic-status revision, then obtain the next external scholar or curriculum-expert response without promoting the idea first.

@@ -21,7 +21,7 @@ These points are already locked for the first validation pass:
 
 - single-source first: Jamia Binoria Aalamia's published Dars-e-Nizami sequence
 - source-attributed model: the system presents what a named source publishes
-- teacher overlay: teacher guidance sits above the source locally without mutating it
+- teacher-guided path: teacher guidance may function as the student's primary local path while the published source remains visible for comparison
 - no default path: the system does not choose a recommended sequence
 - no recommendation behavior: the MVP is a container, not a judge
 
@@ -36,7 +36,7 @@ These points are already locked for the first validation pass:
 Why this source was chosen:
 - it is a real institution-bound published curriculum
 - it gives enough stage and text-level structure to test honest modeling
-- it contains real complications, including alternatives and at least one surprising published order
+- it contains real complications, including alternatives and at least one non-monotonic published order
 
 What is **not** being claimed:
 - that this source represents all Dars-e-Nizami variants
@@ -50,22 +50,22 @@ What matters for this packet is the behavior the model is trying to preserve:
 
 - a named published source remains visible as its own path
 - the source keeps its literal stage order, row structure, alternatives, and oddities
-- anomaly notes explain surprising details without rewriting the source
-- teacher guidance can sit on top of the source locally without erasing it
+- source notes explain non-monotonic or otherwise noteworthy source details without rewriting the source or claiming error
+- teacher guidance can remain primary in the student's local context without erasing the published source
 - the system refuses to turn one institution's sequence into a universal recommendation
 
 The model is trying to obey four minimum honesty rules:
 
-- every stage, unit, text assignment, and edge remains attributable to a named source or named teacher overlay
+- every stage, unit, text assignment, and edge remains attributable to a named source or named teacher-guided path
 - every source keeps its own ordering; no hidden cross-source merge creates a canonical path
-- a source may contain alternatives, optional lanes, and anomalies without losing fidelity
-- teacher guidance may contradict a published source, but the contradiction must remain visible rather than silently replacing the source
+- a source may contain alternatives, source notes, and editorial display groupings without losing fidelity
+- teacher guidance may differ from a published source, but the difference must remain visible rather than silently replacing either path
 
 The model explicitly refuses to:
 
 - invent a universal prerequisite graph
 - create a default recommended path
-- silently normalize surprising published order
+- silently normalize non-monotonic published order
 - demote teacher guidance beneath software judgment
 
 ## Smallest Honest MVP Under Review
@@ -77,9 +77,9 @@ The current MVP boundary is intentionally narrow.
 - one named published curriculum source displayed as an ordered sequence
 - visible source attribution on stages, units, text assignments, and sequence edges
 - explicit display of alternatives inside one source
-- clear distinction between `core`, `co_curricular`, and `optional` rows
-- anomaly and ambiguity notes
-- one teacher-specified overlay that coexists with the source
+- clear editorial distinction between sequence rows, supplementary rows, and elective rows, labeled as a reading aid rather than a scholarly category unless the source itself says otherwise
+- source notes and ambiguity notes
+- one teacher-guided path that coexists with the source
 
 ### Out Of Scope
 
@@ -98,9 +98,9 @@ Two specific source features matter for the review:
 The Jamia Binoria sequence includes rows such as `Al-Ikhtiyar` or `Kanz al-Daqa'iq`.
 The model preserves those as explicit alternatives rather than flattening them into one normalized choice.
 
-2. **The `Al-Hidaya` anomaly**
+2. **The `Al-Hidaya` source-order note**
 The source places `Al-Hidaya` part 4 in Year 6 and part 3 in Year 7.
-The model stores that order literally and attaches a `CurriculumObservation` note rather than "fixing" the sequence internally.
+The model stores that order literally and attaches a neutral source note rather than "fixing" the sequence internally.
 
 ## Validation Axes
 
@@ -112,29 +112,29 @@ The model stores that order literally and attaches a `CurriculumObservation` not
 
 **Failure signal:** The source is too atypical, too incomplete, or too institution-specific to support even first-pass validation.
 
-### Axis 2 — Teacher-Override Honesty
+### Axis 2 — Teacher-Guided-Path Honesty
 
-**Claim under test:** Treating teacher guidance as a visible overlay preserves the right authority hierarchy.
+**Claim under test:** Treating teacher guidance as the student's primary local path, while preserving the published source for comparison, preserves the right authority hierarchy.
 
-**Worked example:** If a teacher wants `Al-Hidaya` part 3 studied before part 4, the system would preserve the published source and show the teacher's resequencing alongside it.
+**Worked example:** If a teacher wants `Al-Hidaya` part 3 studied before part 4, the system would preserve the published source and show the teacher-guided path alongside it as a second attributed path.
 
-**Question:** Does this overlay model preserve teacher supremacy honestly, or does the published-source-first framing subtly demote the teacher's authority?
+**Question:** Does this teacher-guided-path model preserve teacher supremacy honestly, or does the published-source-first framing subtly demote the teacher's authority?
 
 **Failure signal:** The model still centers software or source order in a way that misrepresents teacher guidance.
 
-### Axis 3 — Anomaly Preservation
+### Axis 3 — Literal Source Preservation
 
-**Claim under test:** Preserving surprising published order literally, with annotation, is more honest than silently correcting it.
+**Claim under test:** Preserving non-monotonic published order literally, with annotation, is more honest than silently correcting it.
 
-**Worked example:** `Al-Hidaya` part 4 appears before part 3 in the source and remains stored that way with an anomaly note.
+**Worked example:** `Al-Hidaya` part 4 appears before part 3 in the source and remains stored that way with a neutral source note explaining the non-monotonic numbering.
 
-**Question:** Is literal preservation with annotation the right behavior, or does that itself create a misleading impression?
+**Question:** Is literal preservation with a neutral source note the right behavior, or does that itself create a misleading impression?
 
 **Failure signal:** Literal preservation falsely implies endorsement, or annotation is not enough to prevent misunderstanding.
 
 ### Axis 4 — MVP Usefulness Without Recommendation
 
-**Claim under test:** A browse-only source container with one teacher overlay is still useful once recommendation behavior is removed.
+**Claim under test:** A browse-only source container with one teacher-guided path is still useful once recommendation behavior is removed.
 
 **Question:** Is the remaining MVP useful enough for a student or teacher to consult, or does removing recommendation/default-path behavior make it too weak to matter?
 

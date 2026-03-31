@@ -5,7 +5,7 @@
 - stage: `dossier`
 - priority: `challenge`
 - attention: `visible`
-- independent critique: `weakens`
+- independent critique: `conditional`
 
 ## Thesis
 
@@ -21,7 +21,9 @@ The dossier now also contains a formal authority-boundary data model and a small
 
 The generic expert validation packet now lives at `ideas/curriculum-architect/RESEARCH.md`.
 
-Re-entry to frontier still requires validation before promotion. The immediate task is to obtain and preserve the first external validation response rather than reopen abstract sequencing debate.
+The first external validation response now lives at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_DEEP_RESEARCH_2026-03-31.md`.
+
+Re-entry to frontier still requires validation before promotion. The immediate task is to apply the small terminology and epistemic-status revision that the first external review called for, then obtain the next external response rather than reopen abstract sequencing debate.
 
 ## KR Dependency
 

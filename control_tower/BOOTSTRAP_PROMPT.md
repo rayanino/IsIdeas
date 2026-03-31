@@ -34,5 +34,5 @@ End each serious session with one of:
 - or a generated morning report
 
 Default next move unless disproven:
-Obtain the first external validation response to the sourced Jamia Binoria Dars-e-Nizami model and smallest honest MVP boundary for `I-002 Curriculum Architect`.
+Obtain the next external validation response against the revised `I-002 Curriculum Architect` packet.
 ---

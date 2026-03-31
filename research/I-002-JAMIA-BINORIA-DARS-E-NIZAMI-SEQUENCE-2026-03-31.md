@@ -76,16 +76,18 @@ Several rows bundle more than one text into one published line item.
 4. `text_assignment` must support explicit alternatives.
 The source sometimes publishes `or` choices inside the same year. Those are not parser noise; they are part of the source's structure.
 
-5. `curriculum_edge` must preserve literal published order even when it looks surprising.
+5. `curriculum_edge` must preserve literal published order even when it looks non-monotonic.
 One visible example is the `Al-Hidaya` ordering: part 4 appears in year 6 while part 3 appears in year 7. The system must store that as a source fact plus a note, not auto-correct it into a cleaner sequence.
 
-6. `lane_tagging` is necessary.
-The page mixes core Dars-e-Nizami content with Urdu, English, Pakistan studies, optional groups, and institution-specific contemporary subjects. The model must distinguish:
-- core curriculum sequence
-- attached co-curriculum
-- optional or parallel institutional additions
+6. Editorial grouping is necessary.
+The page mixes the main published sequence with Urdu, English, Pakistan studies, optional groups, and institution-specific contemporary subjects. The model must distinguish:
+- the main published sequence
+- attached institutional additions
+- elective or parallel items
 
-7. `teacher_override` must be an overlay, not a mutation.
+These groupings should be treated as editorial display aids unless the source itself names a category.
+
+7. A `teacher_guided_path` must remain a separate path, not a mutation.
 If a student's teacher gives a different path, the system should preserve the Jamia Binoria source unchanged and add a separate teacher-attributed path.
 
 ## Initial Authority-Boundary Sketch
@@ -108,7 +110,7 @@ The smallest honest structure implied by this source is:
 - `StageUnit`
   - stage ID
   - subject label
-  - lane tag (`core`, `co_curricular`, `optional`)
+  - editorial group (`sequence_listing`, `supplementary_listing`, `elective_listing`)
   - display order
   - notes
 - `TextAssignment`
@@ -117,15 +119,15 @@ The smallest honest structure implied by this source is:
   - assignment mode (`required`, `alternative`, `selection`, `memorization`)
   - display order
   - notes
-- `CurriculumObservation`
+- `CurriculumNote`
   - source ID or unit ID
-  - observation type (`anomaly`, `ambiguity`, `translation_note`)
+  - note type (`source_note`, `ambiguity`, `translation_note`, `extraction_note`)
   - description
-- `TeacherSpecifiedPath`
+- `TeacherGuidedPath`
   - student context ID
   - teacher attribution
   - affected stage or unit
-  - override description
+  - guidance note
   - coexistence rule linking it to the published source rather than replacing it
 
 ## Judgment
@@ -133,8 +135,9 @@ The smallest honest structure implied by this source is:
 Step 1 of the I-002 re-entry path is now complete.
 
 Follow-up note:
-the later dossier formalization separated teacher guidance into a dedicated `TeacherSpecifiedPath` overlay rather than treating it as a `lane tag`.
+the later dossier formalization separated teacher guidance into a dedicated `TeacherGuidedPath` rather than treating it as a row-level category.
 This note remains the step-1 sourcing artifact; the dossier now carries the more mature model.
+After the first external validation response, the later dossier also replaced authority-loaded labels like `core`, `optional`, and `anomaly` with more neutral editorial and source-note language.
 
 This does **not** promote I-002 to frontier and it does **not** validate the source as universally representative.
 It does remove the weaker form of ambiguity that previously remained in the repo:

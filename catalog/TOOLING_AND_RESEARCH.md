@@ -17,6 +17,8 @@
 | R-003 | Extracted control-tower architecture review | archived | Historical record of why the dashboard and runtime surfaces were removed from IsIdeas. | Preserved in ADR-011 and the adversarial review; not an active factory research lane. |
 | R-004 | I-002 first published curriculum anchor | active | One concrete institution-bound curriculum sequence for Curriculum Architect. | See `research/I-002-JAMIA-BINORIA-DARS-E-NIZAMI-SEQUENCE-2026-03-31.md`. |
 | R-005 | I-002 expert validation packet | active | Structured external review of the sourced model and smallest honest MVP boundary. | See `ideas/curriculum-architect/RESEARCH.md`. |
+| R-006 | I-002 ChatGPT deep-research integrity review | active | First external review of the sourced model and packet; found semantic authority leakage without requiring a second source yet. | See `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_DEEP_RESEARCH_2026-03-31.md`. |
+| R-007 | I-002 Claude external adversarial review | active | External review of the sourced model and packet; judged the approach honest enough to continue but flagged teacher-authority framing and anomaly labeling before review dispatch. | See `ideas/curriculum-architect/EXTERNAL_REVIEW_CLAUDE_OPUS_2026-03-31.md`. |
 
 ## Note
 

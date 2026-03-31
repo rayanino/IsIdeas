@@ -12,13 +12,13 @@ ADR-007 demoted I-002 because its "modelability and authority assumptions" were 
 
 1. **Can software hold contradictory prerequisite structures without taking a position?** — Yes. The authority boundary architecture (source-attributed edges, no default path, teacher override, visible disagreement) is sound. The system is designed as a container, not a source.
 
-2. **Do published curricula provide explicit prerequisite structures?** — Yes, at the science level and partially at the text level. Dars-e-Nizami, Al-Azhar, and multiple online platforms provide consumable structures. Classical texts validate the concept.
+2. **Do published curricula provide explicit prerequisite structures?** — Yes, at the science level and partially at the text level. Dars-e-Nizami, Al-Azhar, and multiple online platforms provide consumable structures. Classical texts show that concern for sequencing has historical precedent.
 
 The critical reframing: the system does not model prerequisites (authority claim). It presents what traditions already model (honest container). This resolves the false-authority risk at the architectural level.
 
 ## What Argument This Decision Defeated
 
-The strongest argument against I-002 was: "prerequisite structures cannot be modeled without claiming false scholarly authority." This is wrong in its strong form — published curricula already model prerequisites. It is correct in its weak form — the system must consume existing structures, not invent its own. The authority boundary mechanism resolves this.
+The strongest argument against I-002 was: "prerequisite structures cannot be modeled without claiming false scholarly authority." This is wrong in its strong form — published curricula already publish ordered curricular structures the system could consume. It is correct in its weak form — the system must consume existing structures, not invent its own. The authority boundary mechanism resolves this.
 
 ## What Uncertainty Remains
 

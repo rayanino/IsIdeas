@@ -1,14 +1,14 @@
 # Repository Health
 
 ## Current Health
-Structurally stronger, now more honest.
+Hardened. The repo is now a pure governed markdown factory with no application code.
 
 ## Strengths
 
-- working dashboard and runtime
+- application code extracted per ADR-011; factory scope boundary enforced
 - explicit critique gate for frontier ideas
 - reconciled stage vocabulary
-- explicit separation between governed truth and operational runtime state
+- clear truth ownership across governed directories
 
 ## Current Risks
 

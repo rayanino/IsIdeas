@@ -1,9 +1,9 @@
 # IsIdeas
 
-`IsIdeas` is now a **Codex-led idea factory and development-preparation system** for a future canonical personal Islamic hub.
+`IsIdeas` is a **Codex-led idea factory and development-preparation system** for a future canonical personal Islamic hub.
 
-This repo is not the final knowledge store.
-It is the place where bottlenecks are mapped, candidate systems are challenged, dossiers/specs are hardened, build packets are prepared, and the autonomous control tower tracks factory progress.
+This repo is not the final knowledge store and not a place for application code.
+It is the place where bottlenecks are mapped, candidate systems are challenged, dossiers/specs are hardened, build packets are prepared, and portfolio progress is tracked.
 
 ## Core Thesis
 
@@ -16,7 +16,7 @@ The end state is one evolving personal Islamic environment where:
 - and software acts as leverage without corrupting truth.
 
 `kr` remains the knowledge substrate.
-`IsIdeas` owns the surrounding portfolio, the autonomous factory layer, and the development-preparation machinery.
+`IsIdeas` owns the surrounding portfolio and development-preparation machinery.
 
 ## What Changed
 
@@ -30,74 +30,27 @@ The current model is:
 - integrity outranks convenience,
 - and every serious change must remain traceable.
 
-## Current Runtime
-
-This repository now includes a runnable local control tower:
-
-- Next.js dashboard at the repo root
-- bootstrap file-store runtime in `runtime/`
-- owner idea submission intake
-- deterministic runtime tick and morning report generation
-- WSL bootstrap scripts for unattended operation
-
-What it does **not** include anymore:
-
-- application source trees
-- product implementations
-- active in-repo build work
-
-## Commands
-
-```bash
-npm install
-npm run dev
-npm run runtime:doctor
-npm run runtime:tick
-npm run runtime:report
-npm run test
-```
-
-## State Model
-
-The autonomous system works with these artifact types:
-
-- `StudyBottleneck`
-- `CritiqueArtifact`
-- `Dossier`
-- `Spec`
-- `ResearchArtifact`
-- `ToolCandidate`
-- `DecisionRecord`
-- `Submission`
-- `RunRecord`
-- `IntegrityFlag`
-
-The current lifecycle is:
-
-`submission -> triaged -> spark/incubating -> dossier -> spec_ready -> handoff_ready -> parked/rejected`
-
-`handoff_ready` means the factory is done enough for a builder elsewhere.
-It does not mean the app should now live inside this repo.
-
-## Runtime Truth
-
-- Tracked docs and `runtime/seed/state.json` are governed repo truth.
-- `runtime/local/` and local Postgres state are operational runtime state.
-- Operational state may move faster, but it may not silently redefine governed repo truth.
-- The repo now supports both bootstrap file-store mode and local Postgres runtime mode.
-
 ## Scope Rule
 
-`IsIdeas` may create:
+`IsIdeas` is a pure markdown factory. It may create:
 
 - dossiers
 - specs
 - research notes
 - critique artifacts
-- handoff/build packets
-- queue and progress tracking
+- handoff/build packets (in `handoff/`)
+- bottleneck maps, portfolio tracking, and governance documents
 
-`IsIdeas` may not host application implementations.
+`IsIdeas` may **not** host application implementations, runtime code, build tooling, or `package.json` files. See `control_tower/FACTORY_SCOPE_BOUNDARY.md` for the full boundary definition and `workflows/QUARANTINE_PROTOCOL.md` for what to do when out-of-scope code is discovered.
+
+## Submitting Ideas
+
+The owner submits ideas by creating tracked markdown files:
+
+- **Quick capture**: create a file in `capture/YYYY-MM-DD-<slug>.md` using `templates/QUICK_CAPTURE_TEMPLATE.md`
+- **Structured intake**: use `templates/OWNER_SUBMISSION_TEMPLATE.md` for deliberate, detailed submissions
+
+Submitted ideas enter the triage cadence and may be promoted through the factory lifecycle.
 
 ## Repo Map
 
@@ -105,19 +58,22 @@ It does not mean the app should now live inside this repo.
 IsIdeas/
   README.md
   CLAUDE.md
-  src/                    # dashboard and control-plane app
-  scripts/                # runtime helpers and WSL bootstrap
-  runtime/
-    seed/                 # tracked bootstrap snapshot
-    local/                # gitignored mutable runtime state
-  control_tower/          # Codex-led charter and operating docs
-  catalog/                # current frontier and portfolio records
+  control_tower/          # Codex-led charter, operating docs, and scope boundary
+  catalog/                # current frontier, portfolio records, bottleneck map, registries
     HANDOFF_QUEUE.md      # handoff-ready ideas waiting to be built elsewhere
-    QUARANTINED_BUILDS.md # out-of-scope implementation experiments preserved as records only
+    QUARANTINED_BUILDS.md # out-of-scope builds preserved as records only
+  decisions/              # architecture decision records (ADRs)
+  ideas/                  # idea workspaces (dossiers, specs, research)
+  handoff/                # builder-facing handoff packets
   codex/                  # operator-facing usage guidance
   research/               # promoted source-backed surveys
-  submissions/            # durable intake packets when promoted
-  ideas/                  # legacy seed workspaces, now contestable candidates
+  capture/                # raw idea intake
+  submissions/            # submission tracking
+  shared/                 # glossary, kr boundary, shared primitives
+  workflows/              # lifecycle, promotion, consistency rules
+  templates/              # document templates
+  principles/             # guiding principles
+  roadmaps/               # strategic roadmaps
 ```
 
 ## Non-Negotiables
@@ -127,12 +83,10 @@ IsIdeas/
 - no generic productivity drift
 - no untraceable stage or priority changes
 - no assumption that legacy ideas deserve survival
+- no application code in this repository
 
 ## Immediate Use
 
-1. Start the dashboard.
-2. Submit ideas through the owner intake form.
-3. Run a manual tick and inspect loop accountability plus integrity flags.
-4. Use the WSL scripts when you want the unattended host.
-5. Pressure-test the frontier before promoting anything.
-6. When an idea becomes handoff-ready, move it into the handoff queue instead of building it here.
+1. Submit ideas through markdown files in `capture/`.
+2. Pressure-test the frontier before promoting anything.
+3. When an idea becomes handoff-ready, move it into the handoff queue instead of building it here.

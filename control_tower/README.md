@@ -2,7 +2,7 @@
 
 This directory defines the Codex-led command system for `IsIdeas`.
 
-Its job is to keep the portfolio pointed at deep, compounding Islamic-study bottlenecks while the runtime, dashboard, and research loops stay aligned.
+Its job is to keep the portfolio pointed at deep, compounding Islamic-study bottlenecks.
 
 ## What Belongs Here
 
@@ -10,7 +10,7 @@ Its job is to keep the portfolio pointed at deep, compounding Islamic-study bott
 - operating loop
 - owner/Codex role boundaries
 - bootstrap prompt for new sessions
-- runtime and integrity guidance
+- integrity guidance
 
 ## What Does Not Belong Here
 

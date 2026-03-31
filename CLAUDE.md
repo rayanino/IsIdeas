@@ -4,7 +4,7 @@ This repo is a Codex-led R&D command system for a future canonical personal Isla
 
 ## Mission
 
-Build the portfolio, runtime, research base, and spec discipline that will later produce unusually strong Islamic-study software systems.
+Build the portfolio, research base, and spec discipline that will later produce unusually strong Islamic-study software systems.
 
 ## Priority Order
 
@@ -12,7 +12,7 @@ Build the portfolio, runtime, research base, and spec discipline that will later
 2. deep bottlenecks
 3. portfolio coherence
 4. dossier/spec quality
-5. tooling and runtime leverage
+5. tooling leverage and handoff quality
 
 ## What Matters
 

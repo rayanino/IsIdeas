@@ -1,3 +1,5 @@
+> **Historical reference.** This protocol applied to the extracted control tower dashboard. The dashboard was removed from IsIdeas per ADR-011. Read this document in that historical context.
+
 # Supervised Proving Run
 
 Use this before treating the control tower as something that can just run unattended.

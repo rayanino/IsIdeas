@@ -1,5 +1,7 @@
 # Owner Submissions
 
-This directory exists conceptually for the owner-intake lane, but the live app writes submissions into `runtime/local/state.json` by default so everyday usage does not dirty the repo.
+The owner submits ideas by creating markdown files in `capture/` using the naming convention `capture/YYYY-MM-DD-<slug>.md`.
 
-Tracked submission templates or promoted intake packets can live here later if a proposal deserves durable review.
+For structured intake, use the template at `templates/OWNER_SUBMISSION_TEMPLATE.md`.
+
+Tracked submission files and promoted intake packets live here as reviewable markdown artifacts.

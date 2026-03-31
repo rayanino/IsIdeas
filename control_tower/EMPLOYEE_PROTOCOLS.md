@@ -8,7 +8,7 @@ Codex may:
 
 - propose ideas
 - write decisions
-- implement factory/runtime changes
+- update factory governance documents
 - update governed repo state
 
 Codex may not silently self-ratify frontier status.
@@ -36,3 +36,7 @@ Claude Code, Gemini, or other agents may be used as:
 - verification lanes
 
 They do not become canonical truth automatically, but they do break self-confirming loops when their critique is attached explicitly.
+
+## Scope Check Before Building
+
+Before creating any non-markdown file, verify it is not application code per `FACTORY_SCOPE_BOUNDARY.md`. If ambiguous, write an ADR first.

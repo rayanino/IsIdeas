@@ -1,24 +1,21 @@
 # Consistency And Source Of Truth
 
-## Canonical Surfaces
+## Governed Truth
 
-The repo has two different kinds of truth:
+All canonical truth in this repo lives in version-controlled markdown:
 
-1. **Governed repo truth**
-   - `README.md`
-   - `control_tower/`
-   - `catalog/`
-   - `shared/`
-   - `decisions/`
-   - `runtime/seed/state.json`
-2. **Operational runtime state**
-   - `runtime/local/`
-   - local Postgres runtime documents
-   - morning reports and loop freshness data
+- `README.md`
+- `CLAUDE.md`
+- `control_tower/`
+- `catalog/`
+- `shared/`
+- `decisions/`
+- `ideas/`
+- `research/`
+- `workflows/`
+- `handoff/`
 
 ## Main Rule
-
-Operational runtime state may move faster than governed repo truth, but it may not silently redefine it.
 
 If a governed claim changes:
 - the relevant repo-tracked file must change,
@@ -29,7 +26,7 @@ If a governed claim changes:
 
 No document wins merely because it is newer.
 
-If `control_tower/`, `catalog/`, and `runtime/seed/state.json` disagree, the repo is inconsistent and needs reconciliation.
+If `control_tower/`, `catalog/`, and other governed directories disagree, the repo is inconsistent and needs reconciliation.
 
 ## Vocabulary Rule
 

@@ -25,7 +25,7 @@ That contract must remain replaceable by `kr` later.
 
 ## Build Packet
 
-See [Fixed-Text Preservation MVP — Task Packet](C:/Users/Rayane/Desktop/IsIdeas/codex/FIXED_TEXT_PRESERVATION_MVP_TASK_PACKET.md).
+See [Fixed-Text Preservation MVP -- Task Packet](../../handoff/FIXED_TEXT_PRESERVATION_MVP_TASK_PACKET.md).
 
 ## Scope Note
 

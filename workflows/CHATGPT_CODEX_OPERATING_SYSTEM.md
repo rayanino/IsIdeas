@@ -11,7 +11,7 @@ The current model is:
 
 ## Rule
 
-The system should minimize human consultation when the answer is technical or structural and can be decided rigorously from the repo, runtime, and research surface.
+The system should minimize human consultation when the answer is technical or structural and can be decided rigorously from the repo and research surface.
 
 Escalate only for:
 

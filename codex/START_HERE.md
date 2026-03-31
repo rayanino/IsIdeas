@@ -6,12 +6,9 @@ Before working, inspect:
 - `CLAUDE.md`
 - `control_tower/CHARTER.md`
 - `catalog/ACTIVE_FOCUS.md`
-- `runtime/README.md`
-
 Then decide which lane you are in:
 
 - governance / portfolio
-- runtime / dashboard
 - research / tooling
 - dossier / spec hardening
 

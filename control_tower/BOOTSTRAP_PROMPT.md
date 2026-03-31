@@ -15,8 +15,6 @@ Ground yourself in:
 - `control_tower/OPERATING_LOOP.md`
 - `catalog/ACTIVE_FOCUS.md`
 - `catalog/IDEA_REGISTRY.md`
-- `runtime/README.md`
-
 Working rules:
 
 - protect integrity first

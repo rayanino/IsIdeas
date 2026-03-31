@@ -4,7 +4,7 @@ Use the repo like an owner of a control tower, not like a manual project manager
 
 ## Best Use Of Your Time
 
-- submit ideas through the dashboard
+- submit ideas through markdown files in `capture/`
 - provide resources when the system is blocked on tooling
 - answer genuinely personal preference questions
 - inspect frontier decisions when you want to challenge them
@@ -12,7 +12,6 @@ Use the repo like an owner of a control tower, not like a manual project manager
 ## Poor Use Of Your Time
 
 - micromanaging technical structure
-- reviewing every routine runtime action
 - trying to out-architect the control plane manually
 
 ## Practical Rule

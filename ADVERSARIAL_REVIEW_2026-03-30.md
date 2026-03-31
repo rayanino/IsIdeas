@@ -1,3 +1,5 @@
+> **Historical reference.** The code and architecture referenced in this review (src/, runtime/, PostgreSQL, control tower dashboard) were extracted from IsIdeas per ADR-011 on 2026-03-31. Read this review in that historical context.
+
 # Adversarial Architecture & Integrity Review
 
 **Repo**: IsIdeas (Codex-led R&D command system)

@@ -7,6 +7,6 @@ Use it for:
 - operator guidance
 - startup context
 - immediate next actions
-- build/runtime notes that help the local host
+- session context notes
 
 It no longer exists to keep Codex strategically weak.

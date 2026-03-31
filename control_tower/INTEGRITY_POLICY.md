@@ -15,7 +15,7 @@ Do not let autonomy create silent corruption.
 - silent stage promotion
 - silent priority shifts
 - scholarly claims presented as established truth without traceable support
-- mutation of other repos from unattended IsIdeas runtime work in v1
+- mutation of other repos from unattended IsIdeas work
 
 ## Default Response To Weak Evidence
 

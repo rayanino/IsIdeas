@@ -5,7 +5,6 @@ Read this directory and the root `README.md` before changing portfolio truth.
 ## Current Reality
 
 - The repo is now Codex-led.
-- The dashboard and bootstrap runtime are live.
 - The current idea set is contestable.
 - The next serious work is to pressure-test the frontier and widen bottleneck coverage.
 

@@ -197,7 +197,7 @@ The MVP is a local-first Qur'an preservation tracker that:
 ## 19. Dependencies
 - provisional local Qur'an reference package defined by ADR-008
 - passage-definition storage
-- runtime primitives already present in the control tower repo
+- runtime primitives (extracted from IsIdeas per ADR-011; implementation lives outside this repo)
 - eventual migration path to `kr`
 
 ## 20. Open Questions

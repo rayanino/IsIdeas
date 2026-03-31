@@ -1,6 +1,6 @@
 # Operating Loop
 
-1. inspect integrity flags and overdue loops
+1. inspect integrity flags and overdue loops; verify no application code has entered the repo
 2. review new owner submissions
 3. refresh the bottleneck map deliberately, not performatively
 4. challenge the current frontier with independent critique
@@ -11,10 +11,9 @@
 
 Auto-writing is allowed for:
 
-- intake state
-- runtime loop state
-- morning reports
+- intake state (as markdown)
 - draft operational artifacts
+- morning reports (as markdown only)
 
 Governed portfolio changes require:
 

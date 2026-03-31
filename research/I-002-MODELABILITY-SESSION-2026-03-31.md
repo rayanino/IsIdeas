@@ -52,7 +52,7 @@ Any finding below labeled `uncertain` should not be treated as evidence. Only `v
 
 - **ADR-007**: "weakened more substantially by unvalidated modelability and authority assumptions" — this session tests those exact assumptions
 - **I-001 lesson**: "what seems modelable in theory becomes tricky in practice" (insertion-order vs. chronological replay was a surprise)
-- **Dossier open questions**: what counts as a prerequisite, how to represent multiple paths, where teacher guidance overrides, what is the smallest honest MVP
+- **Dossier open questions**: what counts as a prerequisite, how to represent multiple paths, how teacher-guided paths should relate to published sources, what is the smallest honest MVP
 
 ---
 
@@ -71,10 +71,10 @@ The system stores prerequisite structures as named, attributed data objects. Eac
 
 This is architecturally feasible. It is the same pattern as a map application showing multiple routes — the system presents options without choosing. No authority claim is needed because the system attributes every structure to its source.
 
-**1b. Teacher override.**
-Any prerequisite relationship in the system can be overridden by a `teacher_specified` entry. The student creates these based on their teacher's guidance. When a teacher override contradicts a published curriculum's structure, the system shows both without framing either as wrong.
+**1b. Teacher-guided path.**
+When a student has a teacher, the student enters the teacher's guidance as a `teacher_guided_path`. This path is authoritative for that student; the published curriculum's structure remains visible as comparative context, with neither framed as wrong.
 
-This is straightforward. The system's data model treats teacher-specified entries as first-class, not as exceptions. No authority claim is needed because the teacher's word is always the highest authority in the student's context.
+This is straightforward. The system's data model treats teacher-guided entries as first-class, not as exceptions. No authority claim is needed because the teacher's word is always the highest authority in the student's context.
 
 **1c. No default sequence.**
 When a student first uses the system, there is no pre-selected curriculum. The student must either:
@@ -141,7 +141,7 @@ The Mauritanian mahadra tradition has a distinctive sequencing: heavy emphasis o
 - **Is the sequence granular enough?** At the science level, yes. At the text level, it depends heavily on the specific shaykh's approach.
 - **Does it acknowledge alternatives?** The tradition itself is relatively uniform in broad strokes, but teacher discretion plays a large role in specifics.
 
-**Assessment:** Partially consumable. The broad science-level ordering is explicit. Text-level sequencing is teacher-dependent. This is a good test case for the teacher-override mechanism.
+**Assessment:** Partially consumable. The broad science-level ordering is explicit. Text-level sequencing is teacher-dependent. This is a good test case for the teacher-guided-path mechanism.
 
 #### Online Platforms
 
@@ -219,7 +219,7 @@ None of this requires `kr` to be ready. The dossier-to-spec path can proceed on 
 
 | Criterion | Result | Evidence |
 |---|---|---|
-| Authority boundary architecture is sound | **PASS** | The container mechanism works: source-attributed edges, teacher override, no default, visible disagreement. Each sub-question has a concrete, implementable answer. |
+| Authority boundary architecture is sound | **PASS** | The container mechanism works: source-attributed edges, teacher-guided path, no default, visible disagreement. Each sub-question has a concrete, implementable answer. |
 | At least one published curriculum provides consumable structures | **PASS (qualified)** | Dars-e-Nizami provides text-level sequencing. Al-Azhar provides science-level sequencing. Online platforms demonstrate that educators treat prerequisites as explicit and modelable. |
 | Concrete next-step exists that doesn't require kr | **PASS** | Dossier-deepening, specific curriculum sourcing, data model design, and spec work can all proceed without kr. |
 
@@ -239,7 +239,7 @@ When all four are complete, I-002 can re-enter the frontier with a dossier promo
 
 The strongest argument against I-002 was: "prerequisite structures cannot be modeled without claiming false scholarly authority." This session found that the argument is wrong in its strong form — published curricula already publish ordered curricular structures the system could consume — but correct in its weak form: the system must consume existing structures, not invent its own.
 
-The authority boundary mechanism resolves the risk by making the system a container, not a source. The system never recommends; it presents what named sources provide, with teacher override as the highest authority.
+The authority boundary mechanism resolves the risk by making the system a container, not a source. The system never recommends; it presents what named sources provide, with the teacher-guided path as authoritative for the student.
 
 ### What Uncertainty Remains
 

@@ -74,7 +74,7 @@ The sourced Jamia Binoria sequence sharpens the authority boundary into concrete
 - `stage_unit` must allow multiple texts under one published subject row
 - `text_assignment` must allow explicit alternatives and selections from within a single source
 - source-attributed sequence edges must be stored as published, even when the source contains non-monotonic internal order
-- teacher guidance must sit in a parallel overlay, not by mutating the published source
+- teacher guidance must sit in a separate attributed path that can be authoritative for the student, not by mutating the published source
 - editorial display groupings must be distinguishable from the source's main published sequence without being presented as scholarly categories
 
 ## Authority-Boundary Data Model (2026-03-31)
@@ -158,14 +158,14 @@ Constraint:
 An ordered relation preserved from the source or introduced by teacher guidance.
 
 - `edge_id`: stable local identifier
-- `source_id`: originating source or overlay basis
+- `source_id`: originating source or teacher-path basis
 - `from_stage_id` optional
 - `from_unit_id` optional
 - `from_text_assignment_id` optional
 - `to_stage_id` optional
 - `to_unit_id` optional
 - `to_text_assignment_id` optional
-- `edge_basis`: `published_sequence` or `teacher_specified`
+- `edge_basis`: `published_sequence` or `teacher_guided_path`
 - `edge_note` optional: why the edge exists or why it deserves a source note
 
 Constraint:
@@ -281,6 +281,7 @@ It is written for a generic scholar or curriculum expert and asks for structured
 
 The first external response has now arrived at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_DEEP_RESEARCH_2026-03-31.md`.
 The second external response now exists at `ideas/curriculum-architect/EXTERNAL_REVIEW_CLAUDE_OPUS_2026-03-31.md`.
+The third external response now exists at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_2026-03-31.md`.
 
 Their combined signal is:
 - `overall_honest: no`
@@ -289,13 +290,14 @@ Their combined signal is:
 - `second_source_required_before_further_work: no`
 - both reviews converged that authority-sensitive framing needed tightening before the next external review, even though they differed on the headline honesty verdict
 
-That revision has now been applied to the active dossier and packet.
-The next pass should obtain the next external review against the revised packet rather than continue internal wording work.
+That review found one remaining bundle-level problem: validator-facing supporting docs still used older teacher-override framing.
+That bundle-coherence sweep is now applied across the active dossier, ADR, and modelability session.
+The next pass should rerun the external gate against the updated bundle rather than continue internal wording work.
 
 ## Current Judgment
 Structurally sound, source-anchored, and now backed by an intelligible authority-boundary model plus a plausible MVP boundary.
-Two external reviews are now preserved. They disagree on the top-line `overall_honest` judgment, but they converge that no second source is required yet and that authority-sensitive framing had to be tightened before the next review.
-That terminology revision is now absorbed, so the idea is ready for the next external verdict rather than more internal redesign.
+Three external reviews are now preserved. They converge that no second source is required yet, but the latest gate review still demanded one final bundle-coherence sweep before the next domain-facing review.
+That sweep is now applied, so the next move is to rerun the gate against the updated bundle rather than continue internal redesign.
 
 ## Re-Entry Path (all four required before frontier promotion)
 1. Completed 2026-03-31: source at least one complete published curriculum sequence
@@ -304,4 +306,4 @@ That terminology revision is now absorbed, so the idea is ready for the next ext
 4. Find a scholar or curriculum expert who can validate the sourced curriculum and the authority boundary mechanism
 
 ## Next Move
-Obtain the next external scholar or curriculum-expert response against the revised packet, preserve it verbatim, and only then reassess whether the idea strengthens, conditions, or stalls.
+Obtain the next external scholar or curriculum-expert response against the updated validator-facing bundle, preserve it verbatim, and only then reassess whether the idea strengthens, conditions, or stalls.

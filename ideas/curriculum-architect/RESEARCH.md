@@ -134,11 +134,11 @@ The model stores that order literally and attaches a neutral source note rather 
 
 ### Axis 4 — MVP Usefulness Without Recommendation
 
-**Claim under test:** A browse-only source container with one teacher-guided path is still useful once recommendation behavior is removed.
+**Claim under test:** A browse-only source container with one teacher-guided path is still useful enough as an integrity-safe mechanism once recommendation behavior is removed.
 
-**Question:** Is the remaining MVP useful enough for a student or teacher to consult, or does removing recommendation/default-path behavior make it too weak to matter?
+**Question:** Is the remaining MVP useful enough as an integrity-safe mechanism for a student or teacher to consult, or does usefulness pressure still predict a slide back toward recommendation/default-path behavior?
 
-**Failure signal:** The MVP is too thin to justify software support once authority-safe constraints are applied.
+**Failure signal:** The MVP is too thin to matter without creating pressure to reintroduce implicit recommendation, ranking, or choice-support behavior.
 
 ## Requested Response Format
 

@@ -17,7 +17,9 @@ This file exists to let a fresh orchestrator session take over cleanly.
 - Two external responses have now landed.
 - Those responses disagree on `overall_honest`, but they converge that no second source is required yet and that authority-sensitive framing needed tightening before the next review.
 - That terminology revision is now absorbed into the active packet and dossier.
-- The factory's active focus has shifted from internal revision to obtaining the next external response against the revised packet.
+- A fresh current-main gate review then found one last bundle-level coherence issue in supporting truth docs.
+- That support-doc sweep is now absorbed into the active bundle.
+- The factory's active focus has shifted from support-doc revision to rerunning the external gate against the updated bundle.
 
 ## Current Canonical State
 
@@ -37,10 +39,11 @@ Read these first:
 12. `ideas/curriculum-architect/RESEARCH.md`
 13. `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_DEEP_RESEARCH_2026-03-31.md`
 14. `ideas/curriculum-architect/EXTERNAL_REVIEW_CLAUDE_OPUS_2026-03-31.md`
+15. `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_2026-03-31.md`
 
 ## Single Best Next Move
 
-Obtain the next external validation response against the revised packet.
+Rerun the external gate against the updated validator-facing bundle.
 
 The repo already says this in multiple places:
 - `catalog/ACTIVE_FOCUS.md`
@@ -54,10 +57,10 @@ Do not start another broad meta-review chain unless the new work surfaces a real
 
 ## Do Now
 
-1. treat the sourced Jamia Binoria sequence, formal model, MVP boundary, revised packet, and both preserved external reviews as the active I-002 baseline unless a real insufficiency appears
+1. treat the sourced Jamia Binoria sequence, formal model, MVP boundary, revised packet, and all preserved external reviews as the active I-002 baseline unless a real insufficiency appears
 2. preserve those artifacts as governed factory truth
-3. obtain the next external review against the revised packet and preserve it verbatim
-4. do not promote the idea before the revised packet receives further external scrutiny
+3. rerun the external gate against the updated validator-facing bundle and preserve it verbatim
+4. do not promote the idea before that gate either clears the bundle or names one final bounded blocker
 
 ## Do Later
 
@@ -73,4 +76,4 @@ Do not start another broad meta-review chain unless the new work surfaces a real
 
 ## Session Rule
 
-If a fresh session ends without moving the revised I-002 packet closer to the next external verdict, it likely drifted back into meta-work.
+If a fresh session ends without moving the updated I-002 bundle closer to the next external gate verdict, it likely drifted back into meta-work.

@@ -1,0 +1,43 @@
+# Forbidden-file gate for IsIdeas factory-only boundary.
+# Rejects PRs containing application code file types.
+# See FACTORY_SCOPE_BOUNDARY.md for the full boundary definition.
+# See ADR-013 for why this workflow is an acceptable exception to the pure-markdown boundary.
+
+name: Factory Scope Boundary Check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-forbidden-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for forbidden file types
+        run: |
+          FORBIDDEN_PATTERN='\.(ts|tsx|js|jsx|mjs|cjs|py|sql|sh)$|package\.json|package-lock\.json|tsconfig\.json|next\.config\.|vitest\.config\.|\.env\.|Dockerfile|docker-compose|\.dockerignore'
+
+          # Get all files changed in this PR
+          CHANGED_FILES=$(git diff --name-only origin/main...HEAD)
+
+          # Filter for forbidden patterns (exclude .github/ which is the enforcement mechanism itself)
+          VIOLATIONS=$(echo "$CHANGED_FILES" | grep -E "$FORBIDDEN_PATTERN" | grep -v '^\.github/' || true)
+
+          if [ -n "$VIOLATIONS" ]; then
+            echo "::error::Factory scope boundary violation detected."
+            echo "::error::The following files are forbidden in IsIdeas (see FACTORY_SCOPE_BOUNDARY.md):"
+            echo "$VIOLATIONS" | while read -r file; do
+              echo "::error::  - $file"
+            done
+            echo ""
+            echo "IsIdeas is a factory-only markdown workspace."
+            echo "Application code must live in a separate repository."
+            echo "See decisions/ADR-010-ISIDEAS-IS-FACTORY-ONLY.md for context."
+            exit 1
+          fi
+
+          echo "No forbidden file types detected. Factory boundary intact."

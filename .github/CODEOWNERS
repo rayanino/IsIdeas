@@ -1,0 +1,19 @@
+# Owner-approval enforcement for scope-critical mutations.
+# See ADR-013 for why .github/ is an acceptable exception to the pure-markdown boundary.
+# See control_tower/EMPLOYEE_PROTOCOLS.md for the three mutation classes this protects.
+
+# Governance and scope-boundary documents
+/control_tower/ @rayanino
+/decisions/ @rayanino
+/workflows/ @rayanino
+
+# Portfolio truth that controls idea lifecycle
+/catalog/IDEA_REGISTRY.md @rayanino
+/catalog/ACTIVE_FOCUS.md @rayanino
+/catalog/HANDOFF_QUEUE.md @rayanino
+
+# The scope boundary itself
+/CLAUDE.md @rayanino
+
+# This enforcement mechanism
+/.github/ @rayanino

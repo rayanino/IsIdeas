@@ -1,19 +1,21 @@
 # Active Focus
 
 ## Current Operating Focus
-Fixed-Text Preservation System implementation handoff
+Next frontier selection after handoff queue promotion
 
 ## Why
-The idea has now been narrowed, independently critiqued, specified, and packeted tightly enough for an MVP handoff.
-The correct next move is implementation, not more concept-level elaboration.
+`Fixed-Text Preservation System` is now handoff-ready and has left active factory depth.
+The factory should not keep working on implementation-adjacent detail after handoff.
 
 ## Deep Attention
-- Fixed-Text Preservation System
+- none currently
 
 ## Visible But Not Deep
+- Fixed-Text Preservation System
 - Curriculum Architect
 - Question & Confusion Ledger
 - Lecture Ingestion Ledger
 
 ## Rule
-No other idea should borrow deep attention until the fixed-text MVP has either been implemented or materially weakened by implementation review.
+Handoff-ready ideas leave active deep attention and enter the handoff queue.
+The next deep-focus idea must be chosen deliberately, not by inertia.

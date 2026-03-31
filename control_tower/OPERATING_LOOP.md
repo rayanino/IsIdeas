@@ -4,7 +4,7 @@
 2. review new owner submissions
 3. refresh the bottleneck map deliberately, not performatively
 4. challenge the current frontier with independent critique
-5. harden only the strongest surviving dossiers
+5. harden only the strongest surviving dossiers, and move handoff-ready ideas out of active focus
 6. record decisions and generate the next report
 
 ## Mutation Rule

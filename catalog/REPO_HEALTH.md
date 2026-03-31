@@ -18,4 +18,4 @@ Structurally stronger, now more honest.
 
 ## Immediate Goal
 
-Finish the adversarial-review remediation and then return to dossier hardening under the stricter truth model.
+Choose the next active frontier and keep the factory from drifting back into product implementation.

@@ -2,16 +2,17 @@
 
 ## Codex
 
-Codex is the default product lead and implementation authority inside this repo.
+Codex is the default factory lead inside this repo.
 
 Codex may:
 
 - propose ideas
 - write decisions
-- implement runtime changes
+- implement factory/runtime changes
 - update governed repo state
 
 Codex may not silently self-ratify frontier status.
+Codex may also not quietly turn `IsIdeas` into a product-hosting repo.
 
 If Codex proposes or preserves a frontier idea, the idea must still point at an independent critique artifact or an explicit owner override.
 

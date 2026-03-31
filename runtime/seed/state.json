@@ -49,6 +49,26 @@
   ],
   "decisions": [
     {
+      "id": "D-0010",
+      "kind": "governance",
+      "title": "Restore IsIdeas to factory-only scope",
+      "decidedAt": "2026-03-31T05:44:51.154Z",
+      "owner": "codex",
+      "summary": "IsIdeas now stops at handoff packets and no longer hosts application implementations.",
+      "critiqueSummary": "The repo drifted into building products in-repo, which contradicted the owner's clarified intent for IsIdeas.",
+      "sourceBacked": [],
+      "analytical": [
+        "Handoff-ready ideas leave active frontier work and application code is quarantined out of repo scope."
+      ],
+      "affects": [
+        "governance.scope",
+        "catalog.handoff_queue",
+        "catalog.quarantined_builds",
+        "ideas.I-001"
+      ],
+      "critiqueArtifactIds": []
+    },
+    {
       "id": "D-0001",
       "kind": "governance",
       "title": "Codex-led governance reset",
@@ -232,9 +252,9 @@
       "id": "I-001",
       "slug": "fixed-text-preservation-system",
       "name": "Fixed-Text Preservation System",
-      "stage": "dossier",
-      "priority": "frontier",
-      "attentionTier": "deep",
+      "stage": "handoff_ready",
+      "priority": "handoff",
+      "attentionTier": "visible",
       "contestable": true,
       "thesis": "Preserve already-memorized exact text with an honest review loop instead of building a generic memorization app.",
       "bottleneckIds": [
@@ -243,12 +263,12 @@
       "critiqueArtifactIds": [
         "CA-2026-03-30-adversarial-review"
       ],
-      "nextMove": "Define verification mode, scheduling behavior, interaction modality, and the provisional canonical-text contract before any further promotion.",
-      "mainRisk": "Verification and scheduling ambiguity could make the system look more exact than it really is.",
+      "nextMove": "Hand off the packet elsewhere and preserve the factory lessons here.",
+      "mainRisk": "Scope drift could pull this factory back into hosting product implementation.",
       "krRelationship": "Consumes canonical fixed text from kr but does not own source preservation.",
-      "krDependencyStatus": "blocked_for_build",
-      "krDependencyNote": "Dossier work may continue, but build-grade implementation requires an explicit canonical-text contract and stable passage IDs.",
-      "lastJudgedAt": "2026-03-30T21:30:00.000Z"
+      "krDependencyStatus": "contract_defined",
+      "krDependencyNote": "The idea is packeted for external build work; the provisional Qur'an reference contract stays documented here but not implemented here.",
+      "lastJudgedAt": "2026-03-31T05:44:51.154Z"
     },
     {
       "id": "I-002",
@@ -343,7 +363,7 @@
       "category": "primary agent runtime",
       "status": "adopted",
       "url": "https://platform.openai.com/docs/guides/tools-shell",
-      "note": "Primary writing and integration lane for the control tower and future build packets."
+      "note": "Primary writing and integration lane for the control tower and future handoff packets."
     },
     {
       "id": "T-003",
@@ -413,11 +433,11 @@
       "id": "F-002",
       "severity": "medium",
       "title": "Seed portfolio still reflects workshop-era assumptions",
-      "detail": "The current frontier has been externally challenged, but the bottleneck map, stage discipline, and kr dependency honesty still require continued reconciliation.",
+      "detail": "Factory scope drift has been corrected, but the next frontier still needs deliberate selection and the bottleneck map still needs renewed pressure.",
       "status": "open",
       "blocking": false,
       "raisedAt": "2026-03-30T17:05:00.000Z",
-      "updatedAt": "2026-03-30T20:50:00.000Z",
+      "updatedAt": "2026-03-31T05:44:51.154Z",
       "escalatesAfterHours": 72,
       "escalatesTo": "high"
     }

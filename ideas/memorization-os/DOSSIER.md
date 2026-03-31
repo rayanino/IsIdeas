@@ -78,9 +78,14 @@ So the honest current status is:
 - what evidence from a Qur'an-first MVP would justify later expansion without widening the idea prematurely?
 
 ## Current Judgment
-This narrower thesis is still stronger than the old broad memorization framing, and the first independent critique came back `mixed` rather than `weakens`.
-That is enough to keep the idea in frontier attention and begin formal specification work.
-It is now spec-ready, but not yet handoff-ready.
+This narrower thesis is still stronger than the old broad memorization framing, and the independent critique outcome stayed strong enough for handoff.
+The factory has now done enough on this idea:
+- dossier
+- specification
+- build packet
+- implementation learnings
+
+Further application development belongs outside `IsIdeas`.
 
 ## Next Move
-Use the locked positions in this dossier to produce a build-facing `SPEC.md`, then pressure-test that spec for overreach before writing any implementation packet.
+Preserve the packet and the implementation learnings here, then let the factory move on to the next frontier selection.

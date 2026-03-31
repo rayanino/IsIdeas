@@ -1,6 +1,9 @@
 # Portfolio Priority Board
 
 ## Frontier
+- none currently
+
+## Handoff Queue
 - Fixed-Text Preservation System
 
 ## Challenge
@@ -13,5 +16,5 @@
 
 ## Notes
 
-- `Fixed-Text Preservation System` remains the strongest immediate frontier after independent critique.
-- `Curriculum Architect` stays alive, but only as a visible challenge lane until it passes the modelability and authority test.
+- `handoff` means the factory has done enough and implementation should happen elsewhere.
+- `frontier` is reserved for ideas still consuming active factory depth.

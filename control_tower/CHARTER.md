@@ -2,7 +2,7 @@
 
 ## Mission
 
-Maximize the probability that this repo discovers, challenges, hardens, and eventually builds software systems that materially raise the ceiling of one future personal Islamic study environment.
+Maximize the probability that this repo discovers, challenges, hardens, and hands off software systems that materially raise the ceiling of one future personal Islamic study environment.
 
 ## Core Rule
 
@@ -29,3 +29,4 @@ Optimize for worthy compounding systems, not motion.
 - silent knowledge corruption
 - beautiful infrastructure on top of weak ideas
 - fragmented mini-tools instead of one future environment
+- letting the factory drift into hosting product builds instead of preparing them

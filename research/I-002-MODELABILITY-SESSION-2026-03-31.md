@@ -163,7 +163,7 @@ Modern online Islamic education platforms (SeekersGuidance, Qalam Seminary, Al-M
 
 - **Ibn Khaldun's Muqaddima** (Chapter 6, sections on education): Discusses the sciences and their relationships, notes that certain sciences serve as tools for others (Arabic for Qur'an interpretation, logic for theology), and describes a general pedagogical ordering. More descriptive than prescriptive, but provides evidence that Islamic scholars have historically recognized prerequisite structures.
 
-**Assessment:** Classical texts provide general principles and broad sequencing guidance. They validate the concept that sequencing matters in Islamic education, but they do not provide the kind of granular, machine-consumable prerequisite graphs that a software system would need. Their value is conceptual (the idea is not invented) rather than data (the structures still need to be sourced from institutions).
+**Assessment:** Classical texts provide general principles and broad sequencing guidance. They show that concern for sequencing has historical precedent in Islamic education, but they do not provide the kind of granular, machine-consumable prerequisite graphs that a software system would need. Their value is conceptual (the idea is not invented) rather than data (the structures still need to be sourced from institutions).
 
 ### Survey Synthesis
 
@@ -237,7 +237,7 @@ When all four are complete, I-002 can re-enter the frontier with a dossier promo
 
 ### What Argument This Decision Defeated
 
-The strongest argument against I-002 was: "prerequisite structures cannot be modeled without claiming false scholarly authority." This session found that the argument is wrong in its strong form — published curricula already model prerequisites — but correct in its weak form: the system must consume existing structures, not invent its own.
+The strongest argument against I-002 was: "prerequisite structures cannot be modeled without claiming false scholarly authority." This session found that the argument is wrong in its strong form — published curricula already publish ordered curricular structures the system could consume — but correct in its weak form: the system must consume existing structures, not invent its own.
 
 The authority boundary mechanism resolves the risk by making the system a container, not a source. The system never recommends; it presents what named sources provide, with teacher override as the highest authority.
 

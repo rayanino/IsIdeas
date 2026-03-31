@@ -14,8 +14,9 @@ Hardened. The repo is now a pure governed markdown factory with no application c
 
 - `kr` is still only boundary-defined, not contract-defined
 - the bottleneck map is still mostly analytical; only I-002 currently has source-backed model hardening beyond theory
+- the first external I-002 review found semantic authority leakage in the repo's own terminology
 - only one external critique artifact exists so far; recurring red-team cadence is still weak
 
 ## Immediate Goal
 
-Obtain the first scholarly or curriculum validation response to the sourced Jamia Binoria model and MVP boundary, while keeping the repo free of application code.
+Preserve the first external I-002 review, revise authority-loaded terminology, and then obtain the next scholarly or curriculum validation response, while keeping the repo free of application code.

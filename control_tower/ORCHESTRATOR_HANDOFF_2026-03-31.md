@@ -14,8 +14,10 @@ This file exists to let a fresh orchestrator session take over cleanly.
 - One specific published curriculum sequence has now been sourced and preserved for `I-002 Curriculum Architect`.
 - The sourced sequence has now been translated into a formal authority-boundary model and a smallest honest MVP boundary.
 - A generic expert validation packet now exists for that source and model.
-- The first external response has now landed and it found a small but real integrity leak in authority-loaded terminology.
-- The factory's active focus has shifted from awaiting first response to revising terminology before the next external response.
+- Two external responses have now landed.
+- Those responses disagree on `overall_honest`, but they converge that no second source is required yet and that authority-sensitive framing needed tightening before the next review.
+- That terminology revision is now absorbed into the active packet and dossier.
+- The factory's active focus has shifted from internal revision to obtaining the next external response against the revised packet.
 
 ## Current Canonical State
 
@@ -34,10 +36,11 @@ Read these first:
 11. `research/I-002-JAMIA-BINORIA-DARS-E-NIZAMI-SEQUENCE-2026-03-31.md`
 12. `ideas/curriculum-architect/RESEARCH.md`
 13. `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_DEEP_RESEARCH_2026-03-31.md`
+14. `ideas/curriculum-architect/EXTERNAL_REVIEW_CLAUDE_OPUS_2026-03-31.md`
 
 ## Single Best Next Move
 
-Preserve the first external review, apply the small authority-language revision it calls for, then obtain the next external validation response.
+Obtain the next external validation response against the revised packet.
 
 The repo already says this in multiple places:
 - `catalog/ACTIVE_FOCUS.md`
@@ -51,10 +54,10 @@ Do not start another broad meta-review chain unless the new work surfaces a real
 
 ## Do Now
 
-1. treat the sourced Jamia Binoria sequence, formal model, MVP boundary, validation packet, and first external review as the active I-002 baseline unless a real insufficiency appears
+1. treat the sourced Jamia Binoria sequence, formal model, MVP boundary, revised packet, and both preserved external reviews as the active I-002 baseline unless a real insufficiency appears
 2. preserve those artifacts as governed factory truth
-3. revise authority-loaded terminology before sending the packet to the next reviewer
-4. do not promote the idea before the revised packet receives further external review
+3. obtain the next external review against the revised packet and preserve it verbatim
+4. do not promote the idea before the revised packet receives further external scrutiny
 
 ## Do Later
 
@@ -70,4 +73,4 @@ Do not start another broad meta-review chain unless the new work surfaces a real
 
 ## Session Rule
 
-If a fresh session ends without either preserving the first external review or tightening the language it criticized, it likely drifted back into meta-work.
+If a fresh session ends without moving the revised I-002 packet closer to the next external verdict, it likely drifted back into meta-work.

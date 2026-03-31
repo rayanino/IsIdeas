@@ -34,5 +34,5 @@ End each serious session with one of:
 - or a generated morning report
 
 Default next move unless disproven:
-Preserve the first external I-002 review, revise authority-loaded terminology, and then obtain the next external validation response for `I-002 Curriculum Architect`.
+Obtain the next external validation response against the revised `I-002 Curriculum Architect` packet.
 ---

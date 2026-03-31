@@ -280,18 +280,22 @@ It is written for a generic scholar or curriculum expert and asks for structured
 4. Is the MVP useful enough once recommendation behavior is removed?
 
 The first external response has now arrived at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_DEEP_RESEARCH_2026-03-31.md`.
+The second external response now exists at `ideas/curriculum-architect/EXTERNAL_REVIEW_CLAUDE_OPUS_2026-03-31.md`.
 
-Its core signal is:
+Their combined signal is:
 - `overall_honest: no`
 - `second_source_required_before_further_work: no`
-- the main leak is semantic authority loaded into labels such as `validated`, `core`, `optional`, `anomaly`, and teacher-as-deviation phrasing
+- `overall_honest: yes`
+- `second_source_required_before_further_work: no`
+- both reviews converged that authority-sensitive framing needed tightening before the next external review, even though they differed on the headline honesty verdict
 
-The next pass should preserve that response, apply the smallest integrity revision needed to remove those labels, and only then request the next external review.
+That revision has now been applied to the active dossier and packet.
+The next pass should obtain the next external review against the revised packet rather than continue internal wording work.
 
 ## Current Judgment
 Structurally sound, source-anchored, and now backed by an intelligible authority-boundary model plus a plausible MVP boundary.
-The idea is materially stronger than before, but the first external review found a real integrity problem in the repo's terminology and framing.
-That does not require a second source yet, but it does mean the current wording should be tightened before more external validation is treated as meaningful.
+Two external reviews are now preserved. They disagree on the top-line `overall_honest` judgment, but they converge that no second source is required yet and that authority-sensitive framing had to be tightened before the next review.
+That terminology revision is now absorbed, so the idea is ready for the next external verdict rather than more internal redesign.
 
 ## Re-Entry Path (all four required before frontier promotion)
 1. Completed 2026-03-31: source at least one complete published curriculum sequence
@@ -300,4 +304,4 @@ That does not require a second source yet, but it does mean the current wording 
 4. Find a scholar or curriculum expert who can validate the sourced curriculum and the authority boundary mechanism
 
 ## Next Move
-Preserve the first external review, apply a narrow terminology and epistemic-status revision, then obtain the next external scholar or curriculum-expert response without promoting the idea first.
+Obtain the next external scholar or curriculum-expert response against the revised packet, preserve it verbatim, and only then reassess whether the idea strengthens, conditions, or stalls.

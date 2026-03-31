@@ -13,7 +13,9 @@ Make long-horizon study sequencing explicit, revisable, and dependency-aware ins
 
 ## Current Rule
 
-This idea stays alive, but it no longer deserves deep attention until it survives a concrete modelability test and defines a real authority-bounding mechanism.
+This idea survived the modelability determination (2026-03-31). The system is structurally sound as a container for published curriculum structures, not as a source of its own.
+
+Re-entry to frontier requires completing all four steps in the dossier's re-entry path.
 
 ## KR Dependency
 
@@ -21,3 +23,4 @@ This idea stays alive, but it no longer deserves deep attention until it survive
 
 The dependency is not just stable IDs.
 A build-grade version would need a much deeper pedagogical ontology than is currently defined.
+However, kr does NOT block dossier-deepening, spec work, or curriculum sourcing.

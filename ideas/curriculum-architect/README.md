@@ -23,7 +23,9 @@ The generic expert validation packet now lives at `ideas/curriculum-architect/RE
 
 The first external validation response now lives at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_DEEP_RESEARCH_2026-03-31.md`.
 
-Re-entry to frontier still requires validation before promotion. The immediate task is to apply the small terminology and epistemic-status revision that the first external review called for, then obtain the next external response rather than reopen abstract sequencing debate.
+The Claude external review now also lives at `ideas/curriculum-architect/EXTERNAL_REVIEW_CLAUDE_OPUS_2026-03-31.md`.
+
+Re-entry to frontier still requires validation before promotion. The terminology revision requested by the first reviews has now been absorbed. The immediate task is to obtain the next external response against the revised packet rather than reopen abstract sequencing debate.
 
 ## KR Dependency
 

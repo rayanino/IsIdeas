@@ -6,6 +6,7 @@
 4. challenge the current frontier with independent critique
 5. harden only the strongest surviving dossiers, and move handoff-ready ideas out of active focus
 6. record decisions and generate the next report
+7. if any governance surface has not been meaningfully updated in 3 cycles, flag it for removal review
 
 ## Mutation Rule
 

@@ -1,6 +1,6 @@
 # Idea Registry
 
-| ID | Idea | Stage | Priority | Attention | Why it matters | Main risk | KR status | Next move |
+| ID | Idea | Stage | Lane | Attention | Why it matters | Main risk | KR status | Next move |
 |---|---|---|---|---|---|---|---|---|
 | I-001 | Fixed-Text Preservation System | handoff_ready | handoff | visible | honest exact-text preservation over years | implementation drift outside the packet | contract_defined | hand off the packet elsewhere and preserve the factory lessons here |
 | I-002 | Curriculum Architect | dossier | challenge | visible | sequencing and prerequisite discipline | false authority if system invents structures instead of consuming them | blocked_for_build | source a specific published curriculum sequence and begin authority-boundary data model design (4-step re-entry path in dossier) |

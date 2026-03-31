@@ -1,109 +1,39 @@
 # CLAUDE.md
 
-This repository is a **high-rigor idea workshop** for a long-horizon Islamic-study software environment.
+This repo is a Codex-led R&D command system for a future canonical personal Islamic hub.
 
-The job here is not to collect impressive-sounding ideas.
-The job is to protect quality, deepen promising concepts, and produce handoff-grade specifications only when deserved.
+## Mission
 
-## Core Rule
+Build the portfolio, runtime, research base, and spec discipline that will later produce unusually strong Islamic-study software systems.
 
-Treat every new idea as unproven.
-It must earn its way from capture → incubation → dossier → specification → handoff.
+## Priority Order
 
-## Your Role In This Repo
+1. integrity
+2. deep bottlenecks
+3. portfolio coherence
+4. dossier/spec quality
+5. tooling and runtime leverage
 
-When working here, prioritize:
-- leverage,
-- correctness,
-- implementation clarity,
-- explicit tradeoffs,
-- cross-app coherence,
-- and intellectual honesty about uncertainty.
+## What Matters
 
-Do not optimize for:
-- raw idea count,
-- novelty for its own sake,
-- inflated scope,
-- pseudo-scholarly confidence,
-- or polished language hiding fuzzy thinking.
+- traceable reasoning
+- explicit decision records
+- ruthless rejection of weak ideas
+- strong `kr` boundaries
+- background breadth with narrow foreground hardening
 
-## Default Move
+## What Fails
 
-When in doubt:
-1. improve structure,
-2. improve the dossier of an existing strong idea,
-3. clarify shared primitives,
-4. or reject / park a weak idea.
+- generic productivity apps dressed in Islamic language
+- false certainty about scholarly matters
+- silent drift in priority or lifecycle state
+- elegant infrastructure with weak actual ideas
 
-Do not jump to implementation briefs too early.
+## Working Rule
 
-## Working Discipline
+When changing canonical portfolio state, leave behind enough evidence that a later reviewer can see:
 
-For every substantial idea, force answers to the following:
-1. What exact study bottleneck does this attack?
-2. Why is software actually the right tool?
-3. Why is this specifically valuable in Islamic study?
-4. What are the core entities and system boundaries?
-5. What must be source-backed vs computed?
-6. Where are the correctness risks?
-7. What must remain under human control?
-8. What must the MVP prove?
-9. How could this mislead the user?
-10. How does it compound with the rest of the stack?
-
-## Promotion Standard
-
-An idea should not become `SPEC.md` material until:
-- the problem is precise,
-- the leverage is real,
-- the data model is intelligible,
-- the failure modes are understood,
-- and the path to implementation is clear.
-
-An idea should not be handed to Claude Code until:
-- the spec is complete,
-- the scope boundary is crisp,
-- correctness constraints are explicit,
-- and the build goal is testable.
-
-## Portfolio Coherence Rule
-
-Prefer systems that share primitives and reinforce one another.
-Avoid isolated mini-products unless there is a compelling reason.
-
-Important shared primitives likely include:
-- science IDs
-- topic IDs
-- source IDs
-- excerpt IDs
-- scholar IDs
-- claim IDs
-- review events
-- memorization objects
-- uncertainty markers
-- human-review states
-
-## Islamic-Study Safety Discipline
-
-The software may:
-- structure,
-- retrieve,
-- compare,
-- sequence,
-- schedule,
-- flag,
-- trace,
-- and support disciplined study.
-
-The software may not responsibly:
-- fabricate scholarly judgments,
-- erase uncertainty,
-- flatten meaningful disagreement,
-- present inference as established knowledge,
-- or bypass human review where scholarly risk is meaningful.
-
-## Writing Standard
-
-Write like a senior systems architect preparing material that will later be implemented.
-Prefer exactness over flourish.
-Prefer explicit boundaries over inspiring vagueness.
+- what changed,
+- why it changed,
+- what argument it defeated,
+- and what uncertainty remains.

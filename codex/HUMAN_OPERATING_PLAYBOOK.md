@@ -1,67 +1,20 @@
-# Human Operating Playbook
+# Owner Playbook
 
-This file tells the human operator how to use the workshop with minimal friction.
+Use the repo like an owner of a control tower, not like a manual project manager.
 
-## The Three Roles
+## Best Use Of Your Time
 
-### 1. Human
-Owns final intent, scarce attention, and merge decisions.
+- submit ideas through the dashboard
+- provide resources when the system is blocked on tooling
+- answer genuinely personal preference questions
+- inspect frontier decisions when you want to challenge them
 
-### 2. ChatGPT
-Owns high-judgment work:
-- idea generation
-- idea criticism
-- bottleneck analysis
-- dossier hardening
-- promotion judgment
-- review of Codex output
+## Poor Use Of Your Time
 
-### 3. Codex
-Owns bounded background execution:
-- consistency audits
-- structural cleanup
-- template propagation
-- research scaffolds
-- PR preparation
+- micromanaging technical structure
+- reviewing every routine runtime action
+- trying to out-architect the control plane manually
 
-## Normal Mode
+## Practical Rule
 
-Use this default loop:
-1. choose one current target
-2. ask ChatGPT to sharpen the thinking or produce a Codex task packet
-3. hand the packet to Codex
-4. let Codex open a PR
-5. return to ChatGPT for critical review before merging
-
-## When You Are Busy
-
-If you are studying or occupied, the best use of Codex is:
-- repo consistency work
-- bounded audits
-- structural cleanup
-- scaffold creation
-
-Do not spend background time on open-ended idea generation.
-That should stay with ChatGPT.
-
-## When To Use ChatGPT Instead Of Codex
-
-Use ChatGPT when the question is:
-- what idea is actually worthy?
-- what is the real bottleneck?
-- what is dangerously misleading here?
-- what should be the current focus?
-- should this idea be promoted, parked, or rejected?
-
-## Merge Discipline
-
-Do not merge a Codex PR just because it looks tidy.
-Merge only after checking:
-- does it follow the task packet?
-- did it preserve workshop rules?
-- did it quietly change meaning rather than structure?
-- did it overstep into strategic judgment?
-
-## High-Value Default
-
-If uncertain what to do next, deepen the current P1 idea with ChatGPT or run a bounded consistency audit with Codex.
+If the question is about software structure, automation, research process, queue design, or portfolio mechanics, let Codex decide unless you have a strong reason to override.

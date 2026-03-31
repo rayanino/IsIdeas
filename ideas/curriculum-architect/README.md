@@ -1,25 +1,23 @@
-# 001 — Curriculum Architect
+# I-002 — Curriculum Architect
 
-## Idea ID
-001
+## Current State
 
-## Idea Name
-Curriculum Architect
+- stage: `dossier`
+- priority: `challenge`
+- attention: `visible`
+- independent critique: `weakens`
 
-## Current Stage
-Incubating
+## Thesis
 
-## Current Priority Band
-P2
+Make long-horizon study sequencing explicit, revisable, and dependency-aware instead of leaving it to scattered instinct.
 
-## Why This Idea Exists
-To attack one of the biggest study bottlenecks: bad sequencing, weak prerequisites, and chaotic progression through a science.
+## Current Rule
 
-## Current Status
-This idea is strong enough to deserve sustained dossier work, but it is not yet precise enough for formal specification.
+This idea stays alive, but it no longer deserves deep attention until it survives a concrete modelability test and defines a real authority-bounding mechanism.
 
-## Main Risk Right Now
-False authority: the system could present one path as if it were the path.
+## KR Dependency
 
-## Next Move
-Deepen the dossier until the exact bottleneck, boundary choices, prerequisite model, and MVP shape are much sharper.
+`blocked_for_build`
+
+The dependency is not just stable IDs.
+A build-grade version would need a much deeper pedagogical ontology than is currently defined.

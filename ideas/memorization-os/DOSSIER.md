@@ -10,21 +10,37 @@ Exact-text continuity is one of the few study assets that is both deeply valuabl
 Students can spend serious effort acquiring exact text and then lose it gradually through weak preservation structure. The missing loop is not generic memorization support. It is an honest preservation workflow for already-memorized passages that surfaces fragility without pretending to measure mastery precisely.
 
 ## MVP Scope
-- In scope: a Qur'an-first preservation MVP for already-memorized passages, using full-passage retrieval attempts and simple preservation states.
+- In scope: a Qur'an-first preservation MVP for already-memorized passages, using oral full-passage retrieval events, explicit verification mode, simple preservation states, and a minimal due-ordering system.
 - Out of scope: initial acquisition coaching, Qur'an tutoring, tajwid pedagogy, audio auto-grading, generalized multi-text support, and claim or position retention such as "madhhab X says Y."
 
 ## Minimum v1 Domain Model
 - `Passage`: a contiguous ayah-bounded Qur'anic range attempted as one preservation unit.
 - `Segment`: one ayah within that passage, used for diagnosis after the attempt, not as the primary scheduled object.
-- `Review event`: one full unaided attempt to retrieve one passage from start to end in one sitting, with correction after the attempt if needed.
+- `Review event`: one oral full-passage attempt to retrieve one passage from start to end in one sitting, performed outside the system and recorded afterward.
+- `Verification mode`: `Self-checked`, `Peer-checked`, `Teacher-checked`.
 - `Outcome states`: `Clean`, `Hesitant`, `Break`, `Fail`.
 
 ## Minimum v1 Preservation Logic
 - First-break rule: only the first break is recorded in v1. `Segment` remains diagnostic, not the main scheduled object.
 - Preservation states: `Stable`, `Watch`, `Relearn soon`.
+- Acquisition gate: a passage does not enter preservation tracking until one full-passage event establishes that it is actually memorized enough to be tracked as preservation work rather than acquisition debt.
 - Mapping logic: `Clean` maps to `Stable`, unless the passage is recovering from `Relearn soon`, in which case `Clean` maps to `Watch`. `Hesitant` maps to `Watch`. `Break` maps to `Relearn soon`. `Fail` maps to `Relearn soon`.
 - Recovery rule: after `Break` or `Fail`, two later `Clean` full-passage review events are required to regain `Stable`. The first later `Clean` moves the passage to `Watch`. The second later `Clean` moves it to `Stable`.
 - `Hesitant` vs `Break`: `Hesitant` means unstable but still unaided exact continuity. `Break` means the first point where unaided exact continuity is lost.
+- Verification stance: v1 accepts self-reported events because a preservation system with no low-friction path is not usable, but every review event must store its verification mode so the system remains honest about confidence.
+- Scheduling stance: v1 is not just a journal. It must emit the next-due order. The exact day counts remain provisional, but the order is fixed: `Relearn soon` before `Watch` before `Stable`.
+- Initial due-order defaults for hardening discussion: `Relearn soon` daily, `Watch` every 3 days, `Stable` every 7 days. These numbers are provisional and explicitly open to calibration.
+
+## Interaction Model
+The system does not verify recitation directly in v1.
+The review event happens outside the app, usually as oral recitation to oneself, a peer, or a teacher.
+The app records:
+- which passage was reviewed,
+- verification mode,
+- outcome state,
+- and the next due bucket.
+
+This makes the v1 product a preservation scheduler and record, not a recitation engine.
 
 ## Why This Might Be Strong
 - narrow enough to prove something real without generic memorization-product sprawl
@@ -42,18 +58,29 @@ Students can spend serious effort acquiring exact text and then lose it graduall
 - boundary drift into tutoring, pedagogy, or speculative analytics
 - boundary drift into claim or position retention that belongs closer to a future structured-claims or comparison frontier
 - confusion between preserving exact text in the learner and preserving canonical source artifacts in `kr`
+- self-reported review events may still overstate correctness if verification mode is ignored or downplayed
+- provisional due-order defaults may feel precise before they are empirically justified
 
 ## Relationship To `kr`
-`kr` should own canonical text, provenance, source freezing, and traceability-critical substrate. This idea should begin after that fixed text already exists and should focus on preserving the learner's exact-text continuity over time. It should not absorb source preservation, claim modeling, or comparison logic.
+`kr` should own canonical text, provenance, source freezing, and traceability-critical substrate.
+This idea should not absorb source preservation, claim modeling, or comparison logic.
+
+The independent critique surfaced a harder dependency than the earlier dossier admitted: the system needs a real canonical-text contract for passage boundaries and reference text.
+So the honest current status is:
+- dossier work may continue now
+- build work is blocked until `kr` or an explicit provisional substitute defines canonical fixed-text access and stable passage IDs
 
 ## Current Open Questions
 - what passage sizing conventions are honest enough for v1 while remaining ayah-bounded and usable?
 - what is the lightest correction workflow after a full-passage review event that preserves discipline without adding noise?
+- what exact initial due-order defaults are honest enough for v1 without pretending to scientific calibration?
 - what minimal visibility is enough to surface fragile passages without tempting fake mastery metrics?
 - what evidence from a Qur'an-first MVP would justify later expansion without widening the idea prematurely?
 
 ## Current Judgment
-This narrower thesis is materially stronger than the old broad framing because it is about exact-text preservation rather than generic memorization management. The workspace slug and catalog files still carry the legacy label for scope reasons, but this dossier should use the narrowed thesis. It remains an incubating idea, not a broader portfolio decision.
+This narrower thesis is still stronger than the old broad memorization framing, and the first independent critique came back `mixed` rather than `weakens`.
+That is enough to keep the idea in frontier attention and begin formal specification work.
+It is now spec-ready, but not yet handoff-ready.
 
 ## Next Move
-Hold the boundary and keep sharpening the idea on this narrower ground: Qur'an-first, already-memorized exact passages, full-passage review, first-break diagnosis, and honest recovery states without speculative analytics.
+Use the locked positions in this dossier to produce a build-facing `SPEC.md`, then pressure-test that spec for overreach before writing any implementation packet.

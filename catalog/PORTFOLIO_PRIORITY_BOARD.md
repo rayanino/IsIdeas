@@ -1,18 +1,17 @@
 # Portfolio Priority Board
 
-Use this file to express current portfolio priority using the prioritization framework.
-
-## P1 — Current Strategic Focus
+## Frontier
 - Fixed-Text Preservation System
 
-## P2 — Strong, But Not Current Primary Focus
+## Challenge
 - Curriculum Architect
 - Question & Confusion Ledger
 
-## P3 — Reserved For Future Candidates
-- none yet
+## Watch
+- Lecture Ingestion Ledger
+- study-operations meta-layer
 
 ## Notes
 
-This board should change only through deliberate judgment.
-Priority is about strategic timing, not emotional excitement.
+- `Fixed-Text Preservation System` remains the strongest immediate frontier after independent critique.
+- `Curriculum Architect` stays alive, but only as a visible challenge lane until it passes the modelability and authority test.

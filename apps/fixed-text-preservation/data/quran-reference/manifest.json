@@ -1,0 +1,11 @@
+{
+  "reference_package_id": "provisional-quran-reference-v1",
+  "source_package": "quran-json",
+  "source_version": "3.1.2",
+  "source_url": "https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran.json",
+  "license": "CC-BY-SA 4.0",
+  "provisional_for": "Fixed-Text Preservation MVP",
+  "swap_boundary": "Replace only the quran reference adapter when kr is ready.",
+  "total_surahs": 114,
+  "total_ayahs": 6236
+}

@@ -1,22 +1,19 @@
 # Active Focus
 
-This file names the current primary deep-focus target.
-
-## Current Primary Focus
-Fixed-Text Preservation System
-
-## Current Priority Band
-P1
+## Current Operating Focus
+Fixed-Text Preservation System implementation handoff
 
 ## Why
-It attacks a high-leverage bottleneck: exact-text preservation and long-term retention, with Qur'an-first as the first serious proving ground.
+The idea has now been narrowed, independently critiqued, specified, and packeted tightly enough for an MVP handoff.
+The correct next move is implementation, not more concept-level elaboration.
 
-## Current Stage
-Incubating
+## Deep Attention
+- Fixed-Text Preservation System
 
-## What This Means
-This is the idea that should receive the most serious near-term design attention until a deliberate shift is recorded.
+## Visible But Not Deep
+- Curriculum Architect
+- Question & Confusion Ledger
+- Lecture Ingestion Ledger
 
-## Change Rule
-Do not change this casually.
-A focus shift should happen because of an explicit judgment, not restlessness.
+## Rule
+No other idea should borrow deep attention until the fixed-text MVP has either been implemented or materially weakened by implementation review.

@@ -1,21 +1,12 @@
-# codex/
+# Codex Usage
 
-This directory contains practical delegation assets for background repo work.
+This directory now supports a **Codex-led** repo rather than a bounded background-worker model.
 
-Its purpose is not to let Codex replace judgment.
-Its purpose is to let Codex execute bounded, high-quality tasks against the workshop's standards.
+Use it for:
 
-## What Belongs Here
-- startup instructions
-- ready-to-use task packets
-- prompt library
-- review guidance for Codex-generated PRs
+- operator guidance
+- startup context
+- immediate next actions
+- build/runtime notes that help the local host
 
-## What Does Not Belong Here
-- final judgment about idea quality
-- authority to promote ideas without review
-- vague instructions like "think of brilliant ideas"
-
-## Rule
-Codex should execute against a standard defined elsewhere in the repo.
-It should not invent the standard.
+It no longer exists to keep Codex strategically weak.

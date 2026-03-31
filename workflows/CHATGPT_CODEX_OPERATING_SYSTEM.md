@@ -1,64 +1,32 @@
-# ChatGPT–Codex Operating System
+# Codex Operating System
 
-This document defines how the workshop should use ChatGPT and Codex together.
+This repository no longer uses a `ChatGPT judges / Codex executes` split.
 
-The core principle is simple:
+The current model is:
 
-- ChatGPT owns judgment.
-- Codex owns bounded execution.
-- GitHub PRs are the review gate.
+- Codex leads product direction inside this repo.
+- The owner supplies resources, constraints, and genuinely personal context.
+- External agents or models may be used as research or verification lanes.
+- Durable state changes require traceable reasoning, not human ceremony.
 
-## Why This Split Exists
+## Rule
 
-The most dangerous failure mode is letting execution outrun judgment.
+The system should minimize human consultation when the answer is technical or structural and can be decided rigorously from the repo, runtime, and research surface.
 
-A second dangerous failure mode is using a high-judgment system for repetitive repo work it does not need to do manually.
+Escalate only for:
 
-The correct split is:
-- use ChatGPT for strategic thinking, idea criticism, dossier hardening, and promotion judgment
-- use Codex for concrete, reviewable background tasks in the repo
+- resource procurement,
+- irreducibly personal preference,
+- or missing context that the environment cannot discover.
 
-## What ChatGPT Should Own
+## Integrity Requirement
 
-ChatGPT should lead on:
-- idea generation from real bottlenecks
-- idea comparison and pruning
-- boundary setting
-- risk detection
-- dossier hardening
-- deciding whether an idea should be promoted, parked, or rejected
-- reviewing Codex output before it becomes durable repo truth
+Autonomy is not permission for silent mutation.
 
-## What Codex Should Own
+If the control tower changes:
 
-Codex should be delegated tasks like:
-- repo consistency audits
-- workspace contract compliance passes
-- propagating template changes across idea workspaces
-- creating draft research scaffolds
-- producing drift reports
-- making bounded doc updates
-- preparing PRs from precise task packets
+- lifecycle stage,
+- priority,
+- or portfolio direction,
 
-## What Codex Should Not Own
-
-Do not ask Codex to be the final judge of:
-- whether an idea is strategically extraordinary
-- whether a system is scholar-safe enough
-- whether a bottleneck is truly high leverage
-- whether an idea should become the primary focus
-
-Those are judgment tasks, not execution tasks.
-
-## Standard Loop
-
-1. ChatGPT sharpens the question or task.
-2. A bounded Codex task packet is written.
-3. Codex executes in the repo and opens a PR.
-4. ChatGPT reviews the result critically.
-5. Only then is the output accepted into durable repo state.
-
-## Golden Rule
-
-Codex should not invent the standard.
-Codex should execute against the standard.
+it must also leave a written decision record and critique summary.

@@ -1,25 +1,15 @@
-# 003 — Question & Confusion Ledger
+# I-003 — Question & Confusion Ledger
 
-## Idea ID
-003
+## Current State
 
-## Idea Name
-Question & Confusion Ledger
+- stage: `dossier`
+- priority: `challenge`
+- attention: `visible`
 
-## Current Stage
-Incubating
+## Thesis
 
-## Current Priority Band
-P2
+Treat confusion as a first-class study object so uncertainty survives long enough to be revisited, traced, and eventually resolved.
 
-## Why This Idea Exists
-To make confusion visible, traceable, and resolvable instead of letting it silently accumulate and distort understanding.
+## Rule
 
-## Current Status
-This idea is strong enough for sustained dossier work, but still needs more precision around classification, prioritization, and what counts as real resolution.
-
-## Main Risk Right Now
-False closure: the system could create the appearance of resolution while merely storing notes.
-
-## Next Move
-Deepen the dossier until the resolution model, classification logic, and workflow boundaries are much clearer.
+This workspace remains alive, but it is not consuming frontier depth until its closure risks and resolution model are sharper.

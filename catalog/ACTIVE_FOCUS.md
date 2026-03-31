@@ -1,15 +1,15 @@
 # Active Focus
 
 ## Current Operating Focus
-I-002 Curriculum Architect awaiting next external review after revision
+I-002 Curriculum Architect awaiting rerun of the external gate review
 
 ## Why
 ADR-012 required one specific published curriculum sequence before I-002 could become more concrete.
 That sourcing condition is now satisfied by a preserved Jamia Binoria Aalamia Dars-e-Nizami sequence.
 The dossier now also contains a formal authority-boundary model and smallest honest MVP boundary.
-Two external responses now exist. They disagree on `overall_honest`, but they converge on the practical point that no second source is required yet and that authority-sensitive framing had to be tightened first.
-That terminology revision is now absorbed into the active dossier and packet.
-The next move is the next external review against the revised packet, not another internal design loop or broad meta-selection pass.
+Three external responses now exist. The newest current-main gate review still found one bundle-level coherence problem: older teacher-override framing in validator-facing supporting docs.
+That sweep is now absorbed into the active dossier, ADR, and modelability session.
+The next move is to rerun the external gate against the updated bundle, not another internal design loop or broad meta-selection pass.
 
 ## Deep Attention
 - none currently

@@ -10,7 +10,7 @@ I-002 Curriculum Architect remains at `dossier/challenge/visible` with a defined
 
 ADR-007 demoted I-002 because its "modelability and authority assumptions" were unvalidated. A bounded determination session (2026-03-31) tested two questions:
 
-1. **Can software hold contradictory prerequisite structures without taking a position?** — Yes. The authority boundary architecture (source-attributed edges, no default path, teacher override, visible disagreement) is sound. The system is designed as a container, not a source.
+1. **Can software hold contradictory prerequisite structures without taking a position?** — Yes. The authority boundary architecture (source-attributed edges, no default path, teacher-guided path support, visible disagreement) is sound. The system is designed as a container, not a source.
 
 2. **Do published curricula provide explicit prerequisite structures?** — Yes, at the science level and partially at the text level. Dars-e-Nizami, Al-Azhar, and multiple online platforms provide consumable structures. Classical texts show that concern for sequencing has historical precedent.
 

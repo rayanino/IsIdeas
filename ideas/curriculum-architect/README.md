@@ -25,7 +25,9 @@ The first external validation response now lives at `ideas/curriculum-architect/
 
 The Claude external review now also lives at `ideas/curriculum-architect/EXTERNAL_REVIEW_CLAUDE_OPUS_2026-03-31.md`.
 
-Re-entry to frontier still requires validation before promotion. The terminology revision requested by the first reviews has now been absorbed. The immediate task is to obtain the next external response against the revised packet rather than reopen abstract sequencing debate.
+The current-main ChatGPT gate review now also lives at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_2026-03-31.md`.
+
+Re-entry to frontier still requires validation before promotion. The bundle-coherence sweep requested by that gate review is now applied. The immediate task is to rerun the external gate against the updated validator-facing bundle rather than reopen abstract sequencing debate.
 
 ## KR Dependency
 

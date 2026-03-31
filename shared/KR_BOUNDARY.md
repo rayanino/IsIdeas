@@ -35,3 +35,8 @@ A design may be crossing the boundary badly if:
 
 If the responsibility is primarily about preserving structured knowledge faithfully, it leans toward `kr`.
 If the responsibility is primarily about helping the student act on knowledge over time, it leans toward `IsIdeas`.
+
+## Current Status
+
+This file defines the conceptual boundary only.
+For the current practical contract status and build blockers, see `shared/KR_STATUS.md`.

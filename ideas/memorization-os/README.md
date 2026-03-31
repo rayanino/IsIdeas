@@ -1,25 +1,33 @@
-# 002 — Fixed-Text Preservation System
+# I-001 — Fixed-Text Preservation System
 
-## Idea ID
-002
+## Current State
 
-## Idea Name
-Fixed-Text Preservation System
+- stage: `handoff_ready`
+- priority: `handoff`
+- attention: `visible`
+- independent critique verdict: `mixed`
 
-## Current Stage
-Incubating
+## Thesis
 
-## Current Priority Band
-P1
+Preserve already-memorized exact Qur'anic text over years through an honest post-review scheduler and record, without pretending to verify recitation automatically or teach acquisition.
 
-## Why This Idea Exists
-To help preserve already-memorized exact text over time, starting with the Qur'an, without collapsing into generic memorization management or initial acquisition coaching.
+## Current Hardening Position
 
-## Current Status
-This idea now holds formal P1 attention under the narrowed fixed-text preservation thesis, with Qur'an-first as the first serious proving ground.
+This idea survived factory pressure strongly enough to leave the factory and enter implementation handoff.
+The factory should now preserve the packet and the learnings, not keep hosting implementation work.
 
-## Main Risk Right Now
-Boundary drift and fake precision.
+## KR Dependency
 
-## Next Move
-Deepen dossier around preservation logic and boundaries.
+`contract_defined`
+
+The MVP may proceed against a provisional local Qur'an reference contract defined in `ADR-008`.
+That contract must remain replaceable by `kr` later.
+
+## Build Packet
+
+See [Fixed-Text Preservation MVP -- Task Packet](../../handoff/FIXED_TEXT_PRESERVATION_MVP_TASK_PACKET.md).
+
+## Scope Note
+
+The built prototype that briefly existed in this repo has been quarantined out of active scope.
+See `catalog/QUARANTINED_BUILDS.md` and `ideas/memorization-os/RESEARCH.md`.

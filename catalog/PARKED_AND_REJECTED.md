@@ -2,11 +2,9 @@
 
 Use this file to preserve deliberate non-promotion decisions.
 
-A parked or rejected idea should not simply disappear.
-Its existence may protect the repository from repeating weak paths later.
-
 | Idea | Status | Why | Revisit condition |
 |---|---|---|---|
+| Broad generic memorization platform | Rejected | The narrower fixed-text preservation thesis is strategically cleaner and avoids generic product sprawl. | Revisit only if future evidence shows the narrow thesis cannot carry the real leverage. |
 
 ## Rule
 

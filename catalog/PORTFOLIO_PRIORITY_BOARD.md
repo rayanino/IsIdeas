@@ -1,18 +1,20 @@
 # Portfolio Priority Board
 
-Use this file to express current portfolio priority using the prioritization framework.
+## Frontier
+- none currently
 
-## P1 — Current Strategic Focus
+## Handoff Queue
 - Fixed-Text Preservation System
 
-## P2 — Strong, But Not Current Primary Focus
+## Challenge
 - Curriculum Architect
 - Question & Confusion Ledger
 
-## P3 — Reserved For Future Candidates
-- none yet
+## Watch
+- Lecture Ingestion Ledger
+- study-operations meta-layer
 
 ## Notes
 
-This board should change only through deliberate judgment.
-Priority is about strategic timing, not emotional excitement.
+- `handoff` means the factory has done enough and implementation should happen elsewhere.
+- `frontier` is reserved for ideas still consuming active factory depth.

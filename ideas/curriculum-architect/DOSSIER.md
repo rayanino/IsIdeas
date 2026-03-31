@@ -32,8 +32,28 @@ The system could become misleading if it presents one path as if it were the onl
 - where should teacher guidance override system logic?
 - what is the smallest honest MVP?
 
+## Modelability Determination (2026-03-31)
+
+A bounded session tested two questions: (1) can software hold contradictory prerequisite structures without taking a position, and (2) do published curricula provide explicit structures the system could consume?
+
+**Key finding:** The system must be a container for structures that traditions already publish, not a source of its own prerequisite structures. This reframes the idea from "a system that models prerequisites" (authority claim) to "a system that presents what traditions already model" (honest container).
+
+**Authority boundary:** Architecturally sound. Source-attributed edges, no default path, teacher override, visible disagreement. Each prerequisite relationship carries a named source. The system never recommends.
+
+**Published structures exist:** Dars-e-Nizami provides text-level sequencing. Al-Azhar provides science-level sequencing. Multiple online platforms treat prerequisites as explicit and modelable. Classical texts (Ta'lim al-Muta'allim, Muqaddima) validate the concept.
+
+**Evidence qualification:** Survey is based on general knowledge, not verified primary sources. Next step requires actual sourcing.
+
+See `research/I-002-MODELABILITY-SESSION-2026-03-31.md` for full analysis.
+
 ## Current Judgment
-Strong but immature.
+Structurally sound but dossier-thin. The idea has a defined re-entry path to frontier.
+
+## Re-Entry Path (all four required before frontier promotion)
+1. Source at least one complete published curriculum sequence (e.g., detailed Dars-e-Nizami text list)
+2. Design the data model for the authority boundary mechanism at spec-ready granularity
+3. Write a concrete MVP scope
+4. Find a scholar or curriculum expert who can validate the sourced curriculum and the authority boundary mechanism
 
 ## Next Move
-Deepen the dossier until the prerequisite model, authority boundary, and MVP shape are much sharper.
+Source a specific published curriculum sequence and begin data model design.

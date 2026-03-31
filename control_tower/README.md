@@ -1,21 +1,19 @@
-# control_tower/
+# Control Tower
 
-This directory contains the assets for the dedicated control-tower chat.
+This directory defines the Codex-led command system for `IsIdeas`.
 
-The control tower is the strategic director of the project.
-It is responsible for keeping the portfolio pointed at the right bottlenecks, the right ideas, and the right standards.
+Its job is to keep the portfolio pointed at deep, compounding Islamic-study bottlenecks.
 
 ## What Belongs Here
-- control-tower charter
-- employee role definitions
+
+- charter
 - operating loop
-- bootstrap prompt for a new control-tower chat
-- control-tower checklists
+- owner/Codex role boundaries
+- bootstrap prompt for new sessions
+- integrity guidance
 
 ## What Does Not Belong Here
-- bounded Codex execution assets
-- ordinary idea workspaces
-- implementation details unless they affect strategic direction
 
-## Rule
-The control tower should direct the project, not merely react to it.
+- decorative portfolio prose
+- passive summaries with no operational consequence
+- instructions that weaken Codex back into a bounded clerk

@@ -1,25 +1,26 @@
-# 001 — Curriculum Architect
+# I-002 — Curriculum Architect
 
-## Idea ID
-001
+## Current State
 
-## Idea Name
-Curriculum Architect
+- stage: `dossier`
+- priority: `challenge`
+- attention: `visible`
+- independent critique: `weakens`
 
-## Current Stage
-Incubating
+## Thesis
 
-## Current Priority Band
-P2
+Make long-horizon study sequencing explicit, revisable, and dependency-aware instead of leaving it to scattered instinct.
 
-## Why This Idea Exists
-To attack one of the biggest study bottlenecks: bad sequencing, weak prerequisites, and chaotic progression through a science.
+## Current Rule
 
-## Current Status
-This idea is strong enough to deserve sustained dossier work, but it is not yet precise enough for formal specification.
+This idea survived the modelability determination (2026-03-31). The system is structurally sound as a container for published curriculum structures, not as a source of its own.
 
-## Main Risk Right Now
-False authority: the system could present one path as if it were the path.
+Re-entry to frontier requires completing all four steps in the dossier's re-entry path.
 
-## Next Move
-Deepen the dossier until the exact bottleneck, boundary choices, prerequisite model, and MVP shape are much sharper.
+## KR Dependency
+
+`blocked_for_build`
+
+The dependency is not just stable IDs.
+A build-grade version would need a much deeper pedagogical ontology than is currently defined.
+However, kr does NOT block dossier-deepening, spec work, or curriculum sourcing.

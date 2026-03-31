@@ -1,65 +1,42 @@
-# Employee Protocols
+# Operating Roles
 
-The control tower has two employees:
-- the human operator
-- Codex
+## Codex
 
-Their roles must stay clear.
+Codex is the default factory lead inside this repo.
 
-## 1. The Human Operator
+Codex may:
 
-The human operator is not the strategist.
-The human operator is the executor of directed support tasks.
+- propose ideas
+- write decisions
+- update factory governance documents
+- update governed repo state
 
-### The Human Operator Owns
-- relaying instructions
-- running Codex tasks
-- supplying context, answers, and resources when asked
-- deciding whether to merge after review
-- protecting time and attention by avoiding unnecessary back-and-forth
+Codex may not silently self-ratify frontier status.
+Codex may also not quietly turn `IsIdeas` into a product-hosting repo.
 
-### The Human Operator Does Not Own
-- final idea judgment
-- portfolio direction
-- deciding what counts as extraordinary
-- promoting ideas by instinct
+If Codex proposes or preserves a frontier idea, the idea must still point at an independent critique artifact or an explicit owner override.
 
-### Human Operator Standard
-The human should act like a reliable operations person serving a high-judgment process.
+## Owner
 
-## 2. Codex
+The owner is not a routine reviewer.
 
-Codex is a bounded execution agent.
-It should be treated as a strong but non-sovereign employee.
+The owner mainly supplies:
 
-### Codex Owns
-- consistency audits
-- structural cleanup
-- template propagation
-- bounded repo tasks
-- narrow scaffolding work
-- PR creation for reviewable changes
+- resources and subscriptions
+- irreducibly personal context
+- hard preference calls when they genuinely matter
+- explicit override when desired
 
-### Codex Does Not Own
-- deciding whether an idea is strategically worthy
-- setting portfolio priority
-- redefining workshop standards
-- replacing dossier judgment with mechanical summaries
+## External Models
 
-### Codex Standard
-Codex should execute precisely, conservatively, and reviewably.
+Claude Code, Gemini, or other agents may be used as:
 
-## Rule Of Coordination
+- critique lanes
+- research lanes
+- verification lanes
 
-The control tower should:
-1. decide what matters
-2. assign a bounded task to the correct employee
-3. review the result against the standard
-4. only then allow durable state to change
+They do not become canonical truth automatically, but they do break self-confirming loops when their critique is attached explicitly.
 
-## Anti-Pattern
+## Scope Check Before Building
 
-Failure occurs when:
-- the human improvises portfolio direction
-- Codex makes strategic calls
-- or the control tower becomes passive and merely reacts
+Before creating any non-markdown file, verify it is not application code per `FACTORY_SCOPE_BOUNDARY.md`. If ambiguous, write an ADR first.

@@ -1,7 +1,7 @@
 # ADR-006 — Explicit Postgres runtime upgrade
 
 ## Status
-Accepted
+Superseded — applies to the extracted control tower per ADR-011
 
 ## Decision
 Add a local Postgres-backed runtime mode, but require the storage transition to be recorded explicitly in integrity and decision history.

@@ -14,11 +14,11 @@ The MVP must let one user:
 - view a due queue and per-passage history
 
 ## Why This Matters
-This is the strongest current frontier idea in `IsIdeas`.
+This is the current handoff-ready idea in `IsIdeas`.
 If the MVP works, it proves whether software can honestly protect already-memorized exact text over years without pretending to verify recitation or teach acquisition.
 
 ## Build Target
-Build this as a **standalone app outside the `IsIdeas` control-tower surface**.
+Build this as a **standalone app outside the `IsIdeas` repo**.
 
 Use this technical shape:
 - Next.js 16 App Router
@@ -28,7 +28,8 @@ Use this technical shape:
 - no auth
 - no multi-user support
 
-Do **not** build the product UI inside the existing `IsIdeas` dashboard app.
+Do **not** build any product UI, runtime, or shared implementation surface inside `IsIdeas`.
+This packet exists specifically so the build can happen elsewhere.
 
 ## Inputs To Read First
 - `ideas/memorization-os/SPEC.md`

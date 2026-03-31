@@ -18,4 +18,4 @@ Hardened. The repo is now a pure governed markdown factory with no application c
 
 ## Immediate Goal
 
-Choose the next active frontier and keep the factory from drifting back into product implementation.
+Source one specific published curriculum sequence for I-002 and begin the authority-boundary data model design, while keeping the repo free of application code.

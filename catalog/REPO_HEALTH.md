@@ -13,9 +13,9 @@ Hardened. The repo is now a pure governed markdown factory with no application c
 ## Current Risks
 
 - `kr` is still only boundary-defined, not contract-defined
-- the bottleneck map is still mostly analytical and needs better grounding
+- the bottleneck map is still mostly analytical; only I-002 currently has source-backed model hardening beyond theory
 - only one external critique artifact exists so far; recurring red-team cadence is still weak
 
 ## Immediate Goal
 
-Source one specific published curriculum sequence for I-002 and begin the authority-boundary data model design, while keeping the repo free of application code.
+Obtain the first scholarly or curriculum validation response to the sourced Jamia Binoria model and MVP boundary, while keeping the repo free of application code.

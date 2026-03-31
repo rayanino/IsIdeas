@@ -1,6 +1,6 @@
 # Immediate Next Actions
 
-1. Source one specific published curriculum sequence for I-002, starting with a concrete tradition rather than abstract prerequisite talk.
-2. Begin the authority-boundary data model design so the dossier can move from "structurally sound" toward spec-ready.
+1. Treat the sourced Jamia Binoria Dars-e-Nizami sequence plus the formal authority-boundary model as the current I-002 baseline unless a real insufficiency appears.
+2. Deliver `ideas/curriculum-architect/RESEARCH.md` to a qualified scholar or curriculum expert and preserve the first response verbatim.
 3. Review `catalog/HANDOFF_QUEUE.md` and `catalog/QUARANTINED_BUILDS.md` for any unresolved state.
 4. Verify that the repo contains no stale application code or runtime artifacts.

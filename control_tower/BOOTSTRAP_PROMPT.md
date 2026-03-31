@@ -13,6 +13,7 @@ Ground yourself in:
 - `README.md`
 - `control_tower/CHARTER.md`
 - `control_tower/OPERATING_LOOP.md`
+- `control_tower/ORCHESTRATOR_HANDOFF_2026-03-31.md`
 - `catalog/ACTIVE_FOCUS.md`
 - `catalog/IDEA_REGISTRY.md`
 Working rules:
@@ -31,4 +32,7 @@ End each serious session with one of:
 - a new research/tool verdict
 - a hardened dossier/spec move
 - or a generated morning report
+
+Default next move unless disproven:
+Obtain the first external validation response to the sourced Jamia Binoria Dars-e-Nizami model and smallest honest MVP boundary for `I-002 Curriculum Architect`.
 ---

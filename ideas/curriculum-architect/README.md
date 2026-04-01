@@ -27,7 +27,9 @@ The Claude external review now also lives at `ideas/curriculum-architect/EXTERNA
 
 The current-main ChatGPT gate review now also lives at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_2026-03-31.md`.
 
-Re-entry to frontier still requires validation before promotion. The bundle-coherence sweep requested by that gate review is now applied. The immediate task is to rerun the external gate against the updated validator-facing bundle rather than reopen abstract sequencing debate.
+The current-main ChatGPT rerun review now also lives at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_RERUN_2026-04-01.md`.
+
+Re-entry to frontier still requires validation before promotion. The one remaining modelability-session fallback identified by that rerun is now patched. The immediate task is to rerun the external gate against the updated validator-facing bundle rather than reopen abstract sequencing debate.
 
 ## KR Dependency
 

@@ -282,6 +282,7 @@ It is written for a generic scholar or curriculum expert and asks for structured
 The first external response has now arrived at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_DEEP_RESEARCH_2026-03-31.md`.
 The second external response now exists at `ideas/curriculum-architect/EXTERNAL_REVIEW_CLAUDE_OPUS_2026-03-31.md`.
 The third external response now exists at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_2026-03-31.md`.
+The fourth external response now exists at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_RERUN_2026-04-01.md`.
 
 Their combined signal is:
 - `overall_honest: no`
@@ -290,14 +291,15 @@ Their combined signal is:
 - `second_source_required_before_further_work: no`
 - both reviews converged that authority-sensitive framing needed tightening before the next external review, even though they differed on the headline honesty verdict
 
-That review found one remaining bundle-level problem: validator-facing supporting docs still used older teacher-override framing.
-That bundle-coherence sweep is now applied across the active dossier, ADR, and modelability session.
+That rerun found one remaining bundle-level problem: the modelability session still permitted a system-owned `structural-only` mode with unattributed "widely-agreed logical dependencies."
+That prohibition is now applied explicitly in the modelability session.
 The next pass should rerun the external gate against the updated bundle rather than continue internal wording work.
 
 ## Current Judgment
 Structurally sound, source-anchored, and now backed by an intelligible authority-boundary model plus a plausible MVP boundary.
-Three external reviews are now preserved. They converge that no second source is required yet, but the latest gate review still demanded one final bundle-coherence sweep before the next domain-facing review.
-That sweep is now applied, so the next move is to rerun the gate against the updated bundle rather than continue internal redesign.
+Four external reviews are now preserved. They still converge that no second source is required yet.
+The latest rerun isolated one final invariant violation in the modelability session, and that narrow prohibition is now applied.
+The next move is to rerun the gate against the updated bundle rather than continue internal redesign.
 
 ## Re-Entry Path (all four required before frontier promotion)
 1. Completed 2026-03-31: source at least one complete published curriculum sequence
@@ -306,4 +308,4 @@ That sweep is now applied, so the next move is to rerun the gate against the upd
 4. Find a scholar or curriculum expert who can validate the sourced curriculum and the authority boundary mechanism
 
 ## Next Move
-Obtain the next external scholar or curriculum-expert response against the updated validator-facing bundle, preserve it verbatim, and only then reassess whether the idea strengthens, conditions, or stalls.
+Rerun the external gate against the updated validator-facing bundle, preserve the result verbatim, and only then reassess whether the idea can leave the AI-review loop.

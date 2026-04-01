@@ -8,7 +8,8 @@ ADR-012 required one specific published curriculum sequence before I-002 could b
 That sourcing condition is now satisfied by a preserved Jamia Binoria Aalamia Dars-e-Nizami sequence.
 The dossier now also contains a formal authority-boundary model and smallest honest MVP boundary.
 Three external responses now exist. The newest current-main gate review still found one bundle-level coherence problem: older teacher-override framing in validator-facing supporting docs.
-That sweep is now absorbed into the active dossier, ADR, and modelability session.
+The current-main rerun then found one final system-owned fallback in the modelability session's `structural-only` mode.
+That prohibition is now absorbed into the active dossier, ADR, and modelability session.
 The next move is to rerun the external gate against the updated bundle, not another internal design loop or broad meta-selection pass.
 
 ## Deep Attention

@@ -18,7 +18,8 @@ This file exists to let a fresh orchestrator session take over cleanly.
 - Those responses disagree on `overall_honest`, but they converge that no second source is required yet and that authority-sensitive framing needed tightening before the next review.
 - That terminology revision is now absorbed into the active packet and dossier.
 - A fresh current-main gate review then found one last bundle-level coherence issue in supporting truth docs.
-- That support-doc sweep is now absorbed into the active bundle.
+- A current-main rerun then found one final system-owned fallback in the modelability session.
+- That prohibition is now absorbed into the active bundle.
 - The factory's active focus has shifted from support-doc revision to rerunning the external gate against the updated bundle.
 
 ## Current Canonical State
@@ -40,6 +41,7 @@ Read these first:
 13. `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_DEEP_RESEARCH_2026-03-31.md`
 14. `ideas/curriculum-architect/EXTERNAL_REVIEW_CLAUDE_OPUS_2026-03-31.md`
 15. `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_2026-03-31.md`
+16. `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_RERUN_2026-04-01.md`
 
 ## Single Best Next Move
 

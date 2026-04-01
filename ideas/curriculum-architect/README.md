@@ -29,7 +29,9 @@ The current-main ChatGPT gate review now also lives at `ideas/curriculum-archite
 
 The current-main ChatGPT rerun review now also lives at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_RERUN_2026-04-01.md`.
 
-Re-entry to frontier still requires validation before promotion. The one remaining modelability-session fallback identified by that rerun is now patched. The immediate task is to rerun the external gate against the updated validator-facing bundle rather than reopen abstract sequencing debate.
+The Gemini deep-research review now also lives at `ideas/curriculum-architect/EXTERNAL_REVIEW_GEMINI_DEEP_RESEARCH_2026-04-01.md`.
+
+Re-entry to frontier still requires validation before promotion. The one remaining lexical/invariant blocker from the AI gate loop is now patched. The immediate task is to take the bundle to a real scholar or curriculum expert on the two remaining structural tensions rather than keep iterating AI gate reviews.
 
 ## KR Dependency
 

@@ -102,6 +102,19 @@ The model preserves those as explicit alternatives rather than flattening them i
 The source places `Al-Hidaya` part 4 in Year 6 and part 3 in Year 7.
 The model stores that order literally and attaches a neutral source note rather than "fixing" the sequence internally.
 
+## Questions Requiring Domain Judgment
+
+These questions are not software-design preferences. They concern how traditional pedagogical authority should be represented if a published curriculum is placed inside a digital tool.
+
+1. **Teacher-guided path as linked changes vs. primary path.**
+   If a teacher skips, adds, or resequences texts for a particular student, may the tool represent that only as changes relative to the institution's published sequence, or must it also support the teacher's path as a primary path that can stand on its own without constant comparison back to the institution?
+
+2. **Editorial grouping as reading aid vs. hidden judgment.**
+   When an institution publishes classical and contemporary subjects side by side on one year-page, is it ever acceptable for the tool to separate them into display groupings, or does that impose a judgment about what the "real" curriculum is unless the grouping maps directly to explicit source-page structure?
+
+3. **Neutral source notes on non-numerical ordering.**
+   If a source places Part 4 of a text before Part 3, is a neutral explanatory note acceptable source-fidelity context, or does the act of flagging the order at all project an unwanted expectation that numerical order should normally dictate study order?
+
 ## Validation Axes
 
 ### Axis 1 — Representativeness

@@ -21,6 +21,8 @@
 | R-007 | I-002 Claude external adversarial review | active | External review of the sourced model and packet; judged the approach honest enough to continue but flagged teacher-authority framing and anomaly labeling before review dispatch. | See `ideas/curriculum-architect/EXTERNAL_REVIEW_CLAUDE_OPUS_2026-03-31.md`. |
 | R-008 | I-002 ChatGPT current-main gate review | active | Fresh external gate review of the current main-state bundle; found one remaining bundle-level coherence issue in supporting docs and did not require a second source. | See `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_2026-03-31.md`. |
 | R-009 | I-002 ChatGPT current-main rerun gate review | active | Fresh rerun of the current-main gate; isolated one final system-owned fallback in the modelability session and still did not require a second source. | See `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_RERUN_2026-04-01.md`. |
+| R-010 | I-002 Gemini deep-research structural review | active | Gemini deep-research review agreed no second source is required yet, but surfaced deeper structural tensions around teacher-path ontology and editorial grouping. | See `ideas/curriculum-architect/EXTERNAL_REVIEW_GEMINI_DEEP_RESEARCH_2026-04-01.md`. |
+| R-009 | I-002 ChatGPT current-main rerun gate review | active | Fresh rerun of the current-main gate; isolated one final system-owned fallback in the modelability session and still did not require a second source. | See `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_RERUN_2026-04-01.md`. |
 
 ## Note
 

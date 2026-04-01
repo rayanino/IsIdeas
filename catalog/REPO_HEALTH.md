@@ -14,9 +14,9 @@ Hardened. The repo is now a pure governed markdown factory with no application c
 
 - `kr` is still only boundary-defined, not contract-defined
 - the bottleneck map is still mostly analytical; only I-002 currently has source-backed model hardening beyond theory
-- the latest I-002 gate rerun found one remaining system-owned fallback in the modelability session; that prohibition is now patched but not yet externally rechecked
+- the AI review loop is no longer primarily blocked on wording, but the remaining teacher-path and editorial-group tensions now require domain-facing judgment
 - only one external critique artifact exists so far; recurring red-team cadence is still weak
 
 ## Immediate Goal
 
-Rerun the external gate against the updated I-002 validator-facing bundle, while keeping the repo free of application code.
+Prepare and send a focused scholar/curriculum-expert review on the remaining I-002 structural tensions, while keeping the repo free of application code.

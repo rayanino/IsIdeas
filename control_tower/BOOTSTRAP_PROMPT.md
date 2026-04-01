@@ -34,5 +34,5 @@ End each serious session with one of:
 - or a generated morning report
 
 Default next move unless disproven:
-Rerun the external gate against the updated `I-002 Curriculum Architect` validator-facing bundle.
+Prepare and send a focused scholar/curriculum-expert review on the remaining structural tensions in `I-002 Curriculum Architect`.
 ---

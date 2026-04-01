@@ -28,9 +28,10 @@ The system could become misleading if it presents one path as if it were the onl
 
 ## Current Open Questions
 - is the Jamia Binoria sequence representative enough to validate one real Dars-e-Nizami variant without adding a second source first?
-- does the authority-boundary model preserve teacher supremacy and source visibility in a way a scholar or curriculum expert would accept?
-- is the smallest honest MVP still useful once recommendation and default-path behavior are removed?
-- what level of disagreement should the first validation pass test: stage order, subject rows, or text assignments?
+- must `TeacherGuidedPath` remain a source-linked path, or should teacher-guided study paths be allowed to stand as primary independent graphs?
+- under what exact conditions, if any, is `editorial_group` an acceptable display aid rather than a hidden scholarly judgment?
+- is a neutral note on non-monotonic text ordering ever acceptable, or should deliberate institutional ordering be presented silently unless extraction itself is uncertain?
+- how much evidence-durability hardening of the Jamia Binoria anchor is needed before real scholar review, and how much can wait until later implementation planning?
 
 ## Modelability Determination (2026-03-31)
 
@@ -283,6 +284,7 @@ The first external response has now arrived at `ideas/curriculum-architect/EXTER
 The second external response now exists at `ideas/curriculum-architect/EXTERNAL_REVIEW_CLAUDE_OPUS_2026-03-31.md`.
 The third external response now exists at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_2026-03-31.md`.
 The fourth external response now exists at `ideas/curriculum-architect/EXTERNAL_REVIEW_CHATGPT_CURRENT_MAIN_RERUN_2026-04-01.md`.
+The Gemini deep-research review now also exists at `ideas/curriculum-architect/EXTERNAL_REVIEW_GEMINI_DEEP_RESEARCH_2026-04-01.md`.
 
 Their combined signal is:
 - `overall_honest: no`
@@ -291,15 +293,21 @@ Their combined signal is:
 - `second_source_required_before_further_work: no`
 - both reviews converged that authority-sensitive framing needed tightening before the next external review, even though they differed on the headline honesty verdict
 
-That rerun found one remaining bundle-level problem: the modelability session still permitted a system-owned `structural-only` mode with unattributed "widely-agreed logical dependencies."
+The current-main rerun found one remaining bundle-level problem: the modelability session still permitted a system-owned `structural-only` mode with unattributed "widely-agreed logical dependencies."
 That prohibition is now applied explicitly in the modelability session.
-The next pass should rerun the external gate against the updated bundle rather than continue internal wording work.
+
+The Gemini review adds two deeper structural tensions:
+
+1. whether `TeacherGuidedPath` can remain a source-linked diff or must be representable as a primary standalone path
+2. whether `editorial_group` is truly a reading aid or an unacceptable hidden scholarly filter unless tied strictly to explicit source-page groupings
+
+Those are no longer good candidates for more AI-only cleanup. They require domain-facing judgment.
 
 ## Current Judgment
 Structurally sound, source-anchored, and now backed by an intelligible authority-boundary model plus a plausible MVP boundary.
-Four external reviews are now preserved. They still converge that no second source is required yet.
-The latest rerun isolated one final invariant violation in the modelability session, and that narrow prohibition is now applied.
-The next move is to rerun the gate against the updated bundle rather than continue internal redesign.
+Five external reviews are now preserved. They still converge that no second source is required yet.
+The latest rerun's one lexical/invariant blocker in the modelability session is now patched.
+The Gemini review surfaced deeper structural tensions about teacher-path ontology and editorial grouping that are better judged by a real scholar or curriculum expert than by more AI-only gate loops.
 
 ## Re-Entry Path (all four required before frontier promotion)
 1. Completed 2026-03-31: source at least one complete published curriculum sequence
@@ -308,4 +316,4 @@ The next move is to rerun the gate against the updated bundle rather than contin
 4. Find a scholar or curriculum expert who can validate the sourced curriculum and the authority boundary mechanism
 
 ## Next Move
-Rerun the external gate against the updated validator-facing bundle, preserve the result verbatim, and only then reassess whether the idea can leave the AI-review loop.
+Prepare and send a focused domain-facing review packet to a real scholar or curriculum expert, preserve that response verbatim, and use it to judge the two remaining structural tensions before any promotion talk.

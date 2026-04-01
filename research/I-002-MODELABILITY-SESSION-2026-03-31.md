@@ -80,7 +80,7 @@ This is straightforward. The system's data model treats teacher-guided entries a
 When a student first uses the system, there is no pre-selected curriculum. The student must either:
 - Select a published curriculum to follow, or
 - Enter their teacher's guidance, or
-- Use the system in "structural-only" mode (showing only widely-agreed logical dependencies like "Arabic before Arabic-dependent texts")
+- Use the system with no curriculum loaded (showing texts and metadata only, with no system-owned prerequisite edges until a named source or teacher-guided path is entered)
 
 The system never presents "the recommended path." It presents "the path according to [source]." This eliminates the most dangerous authority claim: the implicit default.
 
